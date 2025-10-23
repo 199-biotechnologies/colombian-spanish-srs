@@ -72,17 +72,48 @@ export default function FlashCard({ card, onReview, isFavorite, onToggleFavorite
         className="bg-white rounded-2xl shadow-lg p-8 md:p-12 min-h-[400px] flex flex-col justify-between cursor-pointer transition-all hover:shadow-xl"
         onClick={handleFlip}
       >
-        <div className="flex-1 flex items-center justify-center">
-          {!isFlipped ? (
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-serif leading-relaxed text-stone-900 mb-6">
-                {getTextLines(card.front).map((line, i) => (
-                  <span key={i}>
-                    {line}
-                    {i < getTextLines(card.front).length - 1 && <br />}
-                  </span>
-                ))}
-              </h2>
+        <div className="flex-1 flex flex-col items-center justify-center">
+          <div className="text-center w-full">
+            <h2 className="text-3xl md:text-4xl font-serif leading-relaxed text-stone-900 mb-6">
+              {getTextLines(card.front).map((line, i) => (
+                <span key={i}>
+                  {line}
+                  {i < getTextLines(card.front).length - 1 && <br />}
+                </span>
+              ))}
+            </h2>
+
+            {isFlipped && (
+              <div className="mt-8 pt-6 border-t-2 border-stone-200">
+                <p className="text-2xl md:text-3xl text-stone-700 leading-relaxed mb-4">
+                  {getTextLines(card.back).map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      {i < getTextLines(card.back).length - 1 && <br />}
+                    </span>
+                  ))}
+                </p>
+                {card.notes && (
+                  <p className="text-sm text-stone-500 italic mt-4">
+                    {card.notes}
+                  </p>
+                )}
+                {card.tags && (
+                  <div className="flex flex-wrap gap-2 justify-center mt-6">
+                    {card.tags.split(' ').map((tag, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {!isFlipped && (
               <button
                 onClick={(e) => {
                   e.stopPropagation();
@@ -93,36 +124,8 @@ export default function FlashCard({ card, onReview, isFavorite, onToggleFavorite
               >
                 {playingAudio ? '🔊 Playing...' : '🔊 Listen'}
               </button>
-            </div>
-          ) : (
-            <div className="text-center">
-              <p className="text-2xl md:text-3xl text-stone-700 leading-relaxed mb-4">
-                {getTextLines(card.back).map((line, i) => (
-                  <span key={i}>
-                    {line}
-                    {i < getTextLines(card.back).length - 1 && <br />}
-                  </span>
-                ))}
-              </p>
-              {card.notes && (
-                <p className="text-sm text-stone-500 italic mt-4">
-                  {card.notes}
-                </p>
-              )}
-              {card.tags && (
-                <div className="flex flex-wrap gap-2 justify-center mt-6">
-                  {card.tags.split(' ').map((tag, i) => (
-                    <span
-                      key={i}
-                      className="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
+            )}
+          </div>
         </div>
 
         {!isFlipped ? (
