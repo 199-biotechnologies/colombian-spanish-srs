@@ -14,8 +14,10 @@ interface WordDifficulty {
   word: string;
   weight: number; // Higher = appears more often
   wrongAttempts: number;
-  correctStreak: number; // Need 3+ to reduce weight
+  correctStreak: number; // Consecutive correct matches
+  totalExposures: number; // CRITICAL: Need 3+ exposures even if all correct
   totalCorrect: number;
+  averageHesitation: number; // Average time to FIRST click (ms)
   lastAttemptTime: number;
 }
 
@@ -28,15 +30,42 @@ export default function MemoryMatch() {
   const [flashGood, setFlashGood] = useState(false);
   const [flashBad, setFlashBad] = useState(false);
   const [wordDifficulties, setWordDifficulties] = useState<Map<string, WordDifficulty>>(new Map());
-  const [attemptStartTime, setAttemptStartTime] = useState<number | null>(null);
+  const [firstClickTime, setFirstClickTime] = useState<number | null>(null);
+  const [pairCount, setPairCount] = useState(6); // Adaptive: 4, 6, or 8
+  const [recentAccuracy, setRecentAccuracy] = useState<boolean[]>([]); // Last 20 matches
 
-  // Initialize game with 6 random words
+  // Initialize game with adaptive pair count
   useEffect(() => {
     initializeGame();
   }, []);
 
+  // Adaptive difficulty: adjust pair count based on recent accuracy
+  useEffect(() => {
+    if (recentAccuracy.length < 10) return; // Need enough data
+
+    const accuracy = recentAccuracy.filter(Boolean).length / recentAccuracy.length;
+
+    let newPairCount = pairCount;
+
+    if (accuracy < 0.5) {
+      newPairCount = 4; // Struggling - reduce to 4 pairs
+    } else if (accuracy < 0.75) {
+      newPairCount = 6; // Intermediate - stay at 6 pairs
+    } else {
+      newPairCount = 8; // Advanced - increase to 8 pairs
+    }
+
+    if (newPairCount !== pairCount) {
+      setPairCount(newPairCount);
+      // Reinitialize with new pair count after current batch completes
+      if (pairs.filter(p => p.matched).length >= 3) {
+        initializeGame();
+      }
+    }
+  }, [recentAccuracy]);
+
   function initializeGame() {
-    const selectedWords = getWeightedRandomWords(6);
+    const selectedWords = getWeightedRandomWords(pairCount);
     const newPairs: MatchPair[] = [];
 
     selectedWords.forEach((word, index) => {
@@ -99,46 +128,67 @@ export default function MemoryMatch() {
     return selected;
   }
 
-  function updateWordDifficulty(wordSpanish: string, correct: boolean, timeTaken?: number) {
+  function updateWordDifficulty(wordSpanish: string, correct: boolean, hesitation?: number) {
     setWordDifficulties(prev => {
       const current = prev.get(wordSpanish) || {
         word: wordSpanish,
-        weight: 1.0,
+        weight: 1.5, // Start higher for new words in speed mode
         wrongAttempts: 0,
         correctStreak: 0,
+        totalExposures: 0,
         totalCorrect: 0,
+        averageHesitation: 0,
         lastAttemptTime: Date.now(),
       };
 
       let newWeight = current.weight;
       let newStreak = current.correctStreak;
       let newTotal = current.totalCorrect;
+      let newExposures = current.totalExposures + 1;
+
+      // Update average hesitation (rolling average)
+      let newAvgHesitation = current.averageHesitation;
+      if (hesitation && correct) {
+        newAvgHesitation = current.averageHesitation === 0
+          ? hesitation
+          : (current.averageHesitation * 0.7 + hesitation * 0.3); // Weighted average
+      }
 
       if (correct) {
         newStreak += 1;
         newTotal += 1;
 
-        // CRITICAL: Only reduce weight after 3+ correct matches in a row
-        if (newStreak >= 3) {
-          // Fast match (<2s) after mastery - reduce more
-          if (timeTaken && timeTaken < 2000) {
-            newWeight = Math.max(0.1, newWeight - 0.3);
-          }
-          // Normal match after mastery - reduce slightly
-          else {
-            newWeight = Math.max(0.1, newWeight - 0.15);
-          }
+        // HYBRID SRS FOR SPEED MODE:
+        // 1. Must have 3+ total exposures (not just streak)
+        // 2. Must have 3+ correct streak
+        // 3. Hesitation must be <800ms (fast retrieval)
+
+        const hasEnoughExposures = newExposures >= 3;
+        const hasGoodStreak = newStreak >= 3;
+        const hasFastRetrieval = newAvgHesitation < 800;
+
+        if (hasEnoughExposures && hasGoodStreak && hasFastRetrieval) {
+          // MASTERED in speed mode - reduce weight significantly
+          newWeight = Math.max(0.3, newWeight - 0.4);
+        } else if (hasEnoughExposures && hasGoodStreak) {
+          // Good streak but slow retrieval - moderate reduction
+          newWeight = Math.max(0.5, newWeight - 0.2);
+        } else if (hasEnoughExposures) {
+          // Has exposures but inconsistent - slight reduction
+          newWeight = Math.max(0.8, newWeight - 0.1);
         } else {
-          // Still building mastery - keep weight high or increase slightly if slow
-          if (timeTaken && timeTaken > 5000) {
-            newWeight = Math.min(5.0, newWeight + 0.2);
+          // Still need more exposures - KEEP WEIGHT HIGH
+          // Even if correct and fast, speed game needs repetition!
+          if (hesitation && hesitation > 1500) {
+            // Slow hesitation = struggling
+            newWeight = Math.min(3.0, newWeight + 0.3);
           }
-          // Don't reduce weight until we have 3+ correct streak!
+          // Don't reduce weight until 3+ exposures!
         }
       } else {
-        // Wrong match - reset streak and increase weight significantly
-        newStreak = 0;
-        newWeight = Math.min(5.0, newWeight + 2.0);
+        // Wrong match - decay streak but don't reset to 0
+        newStreak = Math.max(0, newStreak - 1);
+        newWeight = Math.min(3.0, newWeight + 1.5);
       }
 
       const updated = new Map(prev);
@@ -147,7 +197,9 @@ export default function MemoryMatch() {
         weight: newWeight,
         wrongAttempts: correct ? current.wrongAttempts : current.wrongAttempts + 1,
         correctStreak: newStreak,
+        totalExposures: newExposures,
         totalCorrect: newTotal,
+        averageHesitation: newAvgHesitation,
         lastAttemptTime: Date.now(),
       });
 
@@ -169,10 +221,10 @@ export default function MemoryMatch() {
     const pair = pairs.find(p => p.id === id);
     if (!pair || pair.matched || pendingReplacements.has(id)) return;
 
-    // If no selection, select this one and start timing
+    // If no selection, select this one and start hesitation timer
     if (!selected) {
       setSelected({ id, column });
-      setAttemptStartTime(Date.now());
+      setFirstClickTime(Date.now()); // Track FIRST click time
       return;
     }
 
@@ -197,10 +249,13 @@ export default function MemoryMatch() {
       setFlashGood(true);
       setTimeout(() => setFlashGood(false), 300);
 
-      // Calculate time taken and update difficulty (correct match)
-      const timeTaken = attemptStartTime ? Date.now() - attemptStartTime : undefined;
-      updateWordDifficulty(selectedPair.word.spanish, true, timeTaken);
-      setAttemptStartTime(null);
+      // Calculate HESITATION (time to first click) and update difficulty
+      const hesitation = firstClickTime ? Date.now() - firstClickTime : undefined;
+      updateWordDifficulty(selectedPair.word.spanish, true, hesitation);
+      setFirstClickTime(null);
+
+      // Track accuracy for adaptive difficulty
+      setRecentAccuracy(prev => [...prev.slice(-19), true]); // Keep last 20
 
       setScore(score + 10);
       setStreak(streak + 1);
@@ -237,7 +292,10 @@ export default function MemoryMatch() {
       // Increase difficulty for both words involved in wrong match
       if (selectedPair) updateWordDifficulty(selectedPair.word.spanish, false);
       if (clickedPair) updateWordDifficulty(clickedPair.word.spanish, false);
-      setAttemptStartTime(null);
+      setFirstClickTime(null);
+
+      // Track accuracy for adaptive difficulty
+      setRecentAccuracy(prev => [...prev.slice(-19), false]); // Keep last 20
 
       setStreak(0);
       setSelected(null);
@@ -338,6 +396,12 @@ export default function MemoryMatch() {
             <div>
               <div className="text-3xl font-bold text-amber-700">{streak}</div>
               <div className="text-sm text-stone-600">Streak</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-amber-700">{pairCount}</div>
+              <div className="text-sm text-stone-600">
+                {pairCount === 4 ? '🌱 Learning' : pairCount === 6 ? '⚡ Active' : '🔥 Expert'}
+              </div>
             </div>
           </div>
         </div>
