@@ -312,7 +312,7 @@ export default function MemoryMatch() {
   const column2Items = pairs.filter(p => p.column === 2);
 
   return (
-    <div className="min-h-screen bg-[#fdfcf9] py-12 px-6">
+    <div className="min-h-screen bg-[#fdfcf9] py-12 px-6 select-none overflow-hidden touch-none">
       <style jsx>{`
         @keyframes shake {
           0%, 100% { transform: translateX(0); }
