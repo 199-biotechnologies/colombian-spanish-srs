@@ -15,7 +15,9 @@ export default function MemoryMatch() {
   const [selected, setSelected] = useState<{ id: string; column: 1 | 2 } | null>(null);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
-  const [isReplacing, setIsReplacing] = useState(false);
+  const [pendingReplacements, setPendingReplacements] = useState<Set<string>>(new Set());
+  const [flashGood, setFlashGood] = useState(false);
+  const [flashBad, setFlashBad] = useState(false);
 
   // Initialize game with 6 random words
   useEffect(() => {
@@ -66,8 +68,9 @@ export default function MemoryMatch() {
   }
 
   function handleSelect(id: string, column: 1 | 2) {
-    // Ignore if already matched or currently replacing
-    if (pairs.find(p => p.id === id)?.matched || isReplacing) return;
+    // Ignore if already matched or pending replacement
+    const pair = pairs.find(p => p.id === id);
+    if (!pair || pair.matched || pendingReplacements.has(id)) return;
 
     // If no selection, select this one
     if (!selected) {
@@ -92,59 +95,111 @@ export default function MemoryMatch() {
     const clickedPair = pairs.find(p => p.id === id);
 
     if (selectedPair && clickedPair && selectedPair.word.spanish === clickedPair.word.spanish) {
-      // Match!
+      // Match! Flash green
+      setFlashGood(true);
+      setTimeout(() => setFlashGood(false), 300);
+
       setScore(score + 10);
       setStreak(streak + 1);
 
-      // Mark as matched
+      // Mark as matched and add to pending replacements
       setPairs(prev => prev.map(p =>
         p.id === selected.id || p.id === id ? { ...p, matched: true } : p
       ));
 
+      const newPending = new Set(pendingReplacements).add(selected.id).add(id);
+      setPendingReplacements(newPending);
+
       setSelected(null);
 
-      // Replace with new words after 2.5 seconds to keep empty space visible
-      setIsReplacing(true);
-      setTimeout(() => {
-        replaceMatchedPair(selectedPair, clickedPair);
-        setIsReplacing(false);
-      }, 2500);
+      // Count unique word pairs in pending (each word appears twice - spanish + english)
+      const uniqueWords = new Set<string>();
+      pairs.forEach(p => {
+        if (newPending.has(p.id)) {
+          uniqueWords.add(p.word.spanish);
+        }
+      });
+
+      // Only replace when we have 3+ matched pairs
+      if (uniqueWords.size >= 3) {
+        setTimeout(() => {
+          replaceAllMatched();
+        }, 800);
+      }
     } else {
-      // Not a match - reset selection and break streak
+      // Not a match - flash red and shake
+      setFlashBad(true);
+      setTimeout(() => setFlashBad(false), 400);
+
       setStreak(0);
       setSelected(null);
     }
   }
 
-  function replaceMatchedPair(pair1: MatchPair, pair2: MatchPair) {
-    const unusedWords = coreVocabulary.filter(w =>
-      !pairs.some(p => p.word.spanish === w.spanish && !p.matched)
-    );
+  function replaceAllMatched() {
+    setPairs(prev => {
+      // Get all matched pairs that need replacement
+      const matchedPairs = prev.filter(p => p.matched);
+      if (matchedPairs.length === 0) return prev;
 
-    if (unusedWords.length === 0) return; // All words used
+      // Count how many unique words are matched (pairs)
+      const matchedWords = new Set(matchedPairs.map(p => p.word.spanish));
+      const numPairsToReplace = matchedWords.size;
 
-    const newWord = unusedWords[Math.floor(Math.random() * unusedWords.length)];
-    const timestamp = Date.now();
+      // Get unused words
+      const unusedWords = coreVocabulary.filter(w =>
+        !prev.some(p => p.word.spanish === w.spanish && !p.matched)
+      );
 
-    setPairs(prev => prev.map(p => {
-      if (p.id === pair1.id) {
-        return {
-          id: `${newWord.spanish}-${timestamp}-spanish`,
-          word: newWord,
-          column: 1 as 1 | 2,
-          matched: false,
-        };
-      }
-      if (p.id === pair2.id) {
-        return {
-          id: `${newWord.english}-${timestamp}-english`,
-          word: newWord,
-          column: 2 as 1 | 2,
-          matched: false,
-        };
-      }
-      return p;
-    }));
+      if (unusedWords.length === 0) return prev; // All words used
+
+      // Get random new words
+      const newWords = shuffle(unusedWords).slice(0, numPairsToReplace);
+
+      // Get indices of matched cards in each column
+      const col1Indices = prev
+        .map((p, idx) => p.column === 1 && p.matched ? idx : -1)
+        .filter(idx => idx !== -1);
+      const col2Indices = prev
+        .map((p, idx) => p.column === 2 && p.matched ? idx : -1)
+        .filter(idx => idx !== -1);
+
+      // Shuffle the indices so new cards go to RANDOM positions
+      const shuffledCol1Indices = shuffle(col1Indices);
+      const shuffledCol2Indices = shuffle(col2Indices);
+
+      // Create new pairs array
+      const updated = [...prev];
+
+      newWords.forEach((word, i) => {
+        const timestamp = Date.now() + i;
+
+        // Place Spanish word in random empty col1 position
+        if (i < shuffledCol1Indices.length) {
+          updated[shuffledCol1Indices[i]] = {
+            id: `${word.spanish}-${timestamp}-spanish`,
+            word,
+            column: 1,
+            matched: false,
+          };
+        }
+
+        // Place English word in random empty col2 position
+        if (i < shuffledCol2Indices.length) {
+          updated[shuffledCol2Indices[i]] = {
+            id: `${word.english}-${timestamp}-english`,
+            word,
+            column: 2,
+            matched: false,
+          };
+        }
+      });
+
+      return updated;
+    });
+
+    // Clear pending replacements
+    setPendingReplacements(new Set());
   }
 
   const column1Items = pairs.filter(p => p.column === 1);
@@ -152,6 +207,16 @@ export default function MemoryMatch() {
 
   return (
     <div className="min-h-screen bg-[#fdfcf9] py-12 px-6">
+      <style jsx>{`
+        @keyframes shake {
+          0%, 100% { transform: translateX(0); }
+          25% { transform: translateX(-8px); }
+          75% { transform: translateX(8px); }
+        }
+        .shake {
+          animation: shake 0.3s ease-in-out;
+        }
+      `}</style>
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
@@ -172,7 +237,11 @@ export default function MemoryMatch() {
         </div>
 
         {/* Game Grid */}
-        <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
+        <div className={`grid grid-cols-2 gap-4 max-w-2xl mx-auto rounded-2xl p-6 transition-all duration-300 ${
+          flashGood ? 'bg-green-100 shadow-lg shadow-green-200' :
+          flashBad ? 'bg-red-100 shadow-lg shadow-red-200 shake' :
+          'bg-transparent'
+        }`}>
           {/* Column 1 - Spanish */}
           <div className="space-y-3">
             <h3 className="text-center text-sm font-semibold text-stone-700 mb-2">
@@ -182,15 +251,14 @@ export default function MemoryMatch() {
               <button
                 key={pair.id}
                 onClick={() => handleSelect(pair.id, pair.column)}
-                disabled={pair.matched}
-                className={`w-full py-4 px-6 rounded-xl font-medium text-lg transition-all transform
+                disabled={pair.matched || pendingReplacements.has(pair.id)}
+                className={`w-full py-4 px-6 rounded-xl font-medium text-lg transition-all transform duration-300
                   ${pair.matched
                     ? 'bg-green-100 text-green-700 opacity-0 scale-95'
                     : selected?.id === pair.id
                     ? 'bg-amber-600 text-white shadow-lg scale-105'
                     : 'bg-white text-stone-900 hover:bg-amber-50 hover:shadow-md hover:scale-102 border-2 border-stone-200'
                   }
-                  ${isReplacing ? 'pointer-events-none' : ''}
                 `}
               >
                 {pair.word.spanish}
@@ -207,15 +275,14 @@ export default function MemoryMatch() {
               <button
                 key={pair.id}
                 onClick={() => handleSelect(pair.id, pair.column)}
-                disabled={pair.matched}
-                className={`w-full py-4 px-6 rounded-xl font-medium text-lg transition-all transform
+                disabled={pair.matched || pendingReplacements.has(pair.id)}
+                className={`w-full py-4 px-6 rounded-xl font-medium text-lg transition-all transform duration-300
                   ${pair.matched
                     ? 'bg-green-100 text-green-700 opacity-0 scale-95'
                     : selected?.id === pair.id
                     ? 'bg-amber-600 text-white shadow-lg scale-105'
                     : 'bg-white text-stone-900 hover:bg-amber-50 hover:shadow-md hover:scale-102 border-2 border-stone-200'
                   }
-                  ${isReplacing ? 'pointer-events-none' : ''}
                 `}
               >
                 {pair.word.english}
