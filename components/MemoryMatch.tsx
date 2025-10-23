@@ -14,6 +14,8 @@ interface WordDifficulty {
   word: string;
   weight: number; // Higher = appears more often
   wrongAttempts: number;
+  correctStreak: number; // Need 3+ to reduce weight
+  totalCorrect: number;
   lastAttemptTime: number;
 }
 
@@ -103,26 +105,39 @@ export default function MemoryMatch() {
         word: wordSpanish,
         weight: 1.0,
         wrongAttempts: 0,
+        correctStreak: 0,
+        totalCorrect: 0,
         lastAttemptTime: Date.now(),
       };
 
       let newWeight = current.weight;
+      let newStreak = current.correctStreak;
+      let newTotal = current.totalCorrect;
 
       if (correct) {
-        // Fast match (<2s) - reduce weight
-        if (timeTaken && timeTaken < 2000) {
-          newWeight = Math.max(0.1, newWeight - 0.3);
-        }
-        // Slow match (>5s) - increase weight slightly
-        else if (timeTaken && timeTaken > 5000) {
-          newWeight = Math.min(5.0, newWeight + 0.5);
-        }
-        // Normal match (2-5s) - slight decrease
-        else {
-          newWeight = Math.max(0.1, newWeight - 0.1);
+        newStreak += 1;
+        newTotal += 1;
+
+        // CRITICAL: Only reduce weight after 3+ correct matches in a row
+        if (newStreak >= 3) {
+          // Fast match (<2s) after mastery - reduce more
+          if (timeTaken && timeTaken < 2000) {
+            newWeight = Math.max(0.1, newWeight - 0.3);
+          }
+          // Normal match after mastery - reduce slightly
+          else {
+            newWeight = Math.max(0.1, newWeight - 0.15);
+          }
+        } else {
+          // Still building mastery - keep weight high or increase slightly if slow
+          if (timeTaken && timeTaken > 5000) {
+            newWeight = Math.min(5.0, newWeight + 0.2);
+          }
+          // Don't reduce weight until we have 3+ correct streak!
         }
       } else {
-        // Wrong match - significantly increase weight
+        // Wrong match - reset streak and increase weight significantly
+        newStreak = 0;
         newWeight = Math.min(5.0, newWeight + 2.0);
       }
 
@@ -131,6 +146,8 @@ export default function MemoryMatch() {
         word: wordSpanish,
         weight: newWeight,
         wrongAttempts: correct ? current.wrongAttempts : current.wrongAttempts + 1,
+        correctStreak: newStreak,
+        totalCorrect: newTotal,
         lastAttemptTime: Date.now(),
       });
 
