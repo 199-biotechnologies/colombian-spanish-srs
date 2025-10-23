@@ -2,13 +2,13 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Colombian Spanish",
+  title: "Cariñosas",
   description: "Learn Colombian Spanish with spaced repetition",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Colombian Spanish",
+    title: "Cariñosas",
   },
 };
 

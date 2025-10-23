@@ -183,7 +183,7 @@ export default function Home() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#fdfcf9]">
         <div className="text-center">
-          <h1 className="text-3xl font-serif mb-4">Colombian Spanish</h1>
+          <h1 className="text-3xl font-serif mb-4">Cariñosas</h1>
           <p className="text-lg text-stone-600">Loading...</p>
         </div>
       </div>
@@ -208,11 +208,8 @@ export default function Home() {
         <div className="container max-w-6xl mx-auto px-6 py-12">
           <div className="mb-8">
             <h1 className="text-4xl font-serif text-stone-900 mb-2">
-              Build Fluency, Not Vocabulary
+              Cariñosas
             </h1>
-            <p className="text-lg text-stone-600">
-              Learn to communicate effectively with minimal words. Start with high-priority categories.
-            </p>
           </div>
           <CategorySelector
             selectedCategory={selectedCategory}

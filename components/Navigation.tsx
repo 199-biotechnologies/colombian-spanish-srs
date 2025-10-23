@@ -17,7 +17,7 @@ export default function Navigation({ view, setView, selectedCategory, onBackToCa
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-serif text-stone-900">
-              Colombian Spanish
+              Cariñosas
             </h1>
             {category && (
               <p className="text-sm text-stone-600 mt-1">
