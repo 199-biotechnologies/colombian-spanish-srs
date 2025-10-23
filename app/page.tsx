@@ -25,7 +25,7 @@ export default function Home() {
   useEffect(() => {
     async function init() {
       const loadedCards = await loadCards();
-      const loadedProgress = loadProgress();
+      const loadedProgress = await loadProgress();
 
       setCards(loadedCards);
       setProgress(loadedProgress);
