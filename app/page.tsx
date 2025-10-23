@@ -49,6 +49,33 @@ export default function Home() {
     init();
   }, []);
 
+  const handleToggleFavorite = () => {
+    if (studyQueue.length === 0) return;
+
+    const currentCard = studyQueue[currentCardIndex];
+    const currentProgress =
+      progress.find((p) => p.cardId === currentCard.id) ||
+      initializeCardProgress(currentCard.id);
+
+    const updatedProgress = {
+      ...currentProgress,
+      isFavorite: !currentProgress.isFavorite,
+    };
+
+    saveProgressItem(updatedProgress);
+
+    setProgress((prev) => {
+      const index = prev.findIndex((p) => p.cardId === currentCard.id);
+      if (index >= 0) {
+        const newProgress = [...prev];
+        newProgress[index] = updatedProgress;
+        return newProgress;
+      } else {
+        return [...prev, updatedProgress];
+      }
+    });
+  };
+
   const handleReview = (quality: number) => {
     if (studyQueue.length === 0) return;
 
@@ -109,6 +136,11 @@ export default function Home() {
               <FlashCard
                 card={studyQueue[currentCardIndex]}
                 onReview={handleReview}
+                isFavorite={
+                  progress.find((p) => p.cardId === studyQueue[currentCardIndex].id)
+                    ?.isFavorite || false
+                }
+                onToggleFavorite={handleToggleFavorite}
               />
             </>
           ) : (
@@ -127,7 +159,29 @@ export default function Home() {
           )}
         </div>
       ) : (
-        <BrowseView cards={cards} />
+        <BrowseView cards={cards} progress={progress} onToggleFavorite={(cardId) => {
+          const currentProgress =
+            progress.find((p) => p.cardId === cardId) ||
+            initializeCardProgress(cardId);
+
+          const updatedProgress = {
+            ...currentProgress,
+            isFavorite: !currentProgress.isFavorite,
+          };
+
+          saveProgressItem(updatedProgress);
+
+          setProgress((prev) => {
+            const index = prev.findIndex((p) => p.cardId === cardId);
+            if (index >= 0) {
+              const newProgress = [...prev];
+              newProgress[index] = updatedProgress;
+              return newProgress;
+            } else {
+              return [...prev, updatedProgress];
+            }
+          });
+        }} />
       )}
     </div>
   );

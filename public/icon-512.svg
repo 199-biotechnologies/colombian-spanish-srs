@@ -1,4 +1,18 @@
-<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
-  <rect width="512" height="512" fill="#d97706"/>
-  <text x="256" y="320" font-family="Georgia, serif" font-size="200" fill="#fdfcf9" text-anchor="middle">ES</text>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="#fdfcf9"/>
+
+  <!-- Border accent -->
+  <rect x="36" y="36" width="440" height="440" rx="90" fill="none" stroke="#d97706" stroke-width="8"/>
+
+  <!-- Spanish flag colors -->
+  <rect x="86" y="86" width="340" height="12" fill="#c60b1e" rx="6"/>
+  <rect x="86" y="106" width="340" height="22" fill="#ffc400" rx="6"/>
+  <rect x="86" y="136" width="340" height="12" fill="#c60b1e" rx="6"/>
+
+  <!-- Main text ES -->
+  <text x="256" y="315" font-family="Georgia, serif" font-size="150" font-weight="600" fill="#d97706" text-anchor="middle" dominant-baseline="middle">ES</text>
+
+  <!-- Subtitle -->
+  <text x="256" y="410" font-family="Georgia, serif" font-size="40" fill="#78716c" text-anchor="middle">Colombian</text>
 </svg>

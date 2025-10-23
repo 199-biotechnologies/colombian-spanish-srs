@@ -18,6 +18,7 @@ export interface CardProgress {
   repetitions: number;
   dueDate: Date;
   lastReviewed: Date | null;
+  isFavorite?: boolean;
 }
 
 export interface ReviewResult {

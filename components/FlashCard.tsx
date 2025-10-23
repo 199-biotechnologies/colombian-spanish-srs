@@ -6,9 +6,11 @@ import { Card } from '@/lib/types';
 interface FlashCardProps {
   card: Card;
   onReview: (quality: number) => void;
+  isFavorite: boolean;
+  onToggleFavorite: () => void;
 }
 
-export default function FlashCard({ card, onReview }: FlashCardProps) {
+export default function FlashCard({ card, onReview, isFavorite, onToggleFavorite }: FlashCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [playingAudio, setPlayingAudio] = useState(false);
 
@@ -51,6 +53,20 @@ export default function FlashCard({ card, onReview }: FlashCardProps) {
 
   return (
     <div className="w-full">
+      <div className="mb-4 flex justify-end">
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onToggleFavorite();
+          }}
+          className="p-2 rounded-lg hover:bg-amber-50 transition-colors"
+          aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+        >
+          <span className="text-3xl">
+            {isFavorite ? '⭐' : '☆'}
+          </span>
+        </button>
+      </div>
       <div
         className="bg-white rounded-2xl shadow-lg p-8 md:p-12 min-h-[400px] flex flex-col justify-between cursor-pointer transition-all hover:shadow-xl"
         onClick={handleFlip}

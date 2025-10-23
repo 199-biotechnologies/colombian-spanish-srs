@@ -1,22 +1,36 @@
 'use client';
 
 import { useState } from 'react';
-import { Card } from '@/lib/types';
+import { Card, CardProgress } from '@/lib/types';
 
 interface BrowseViewProps {
   cards: Card[];
+  progress: CardProgress[];
+  onToggleFavorite: (cardId: string) => void;
 }
 
-export default function BrowseView({ cards }: BrowseViewProps) {
+export default function BrowseView({ cards, progress, onToggleFavorite }: BrowseViewProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
 
-  const filteredCards = cards.filter(
-    (card) =>
+  const filteredCards = cards.filter((card) => {
+    const matchesSearch =
       card.front.toLowerCase().includes(searchTerm.toLowerCase()) ||
       card.back.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      card.tags.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+      card.tags.toLowerCase().includes(searchTerm.toLowerCase());
+
+    if (!matchesSearch) return false;
+
+    if (showFavoritesOnly) {
+      const cardProgress = progress.find((p) => p.cardId === card.id);
+      return cardProgress?.isFavorite === true;
+    }
+
+    return true;
+  });
+
+  const favoriteCount = progress.filter((p) => p.isFavorite).length;
 
   const playAudio = (card: Card) => {
     if ('speechSynthesis' in window) {
@@ -37,20 +51,36 @@ export default function BrowseView({ cards }: BrowseViewProps) {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700 focus:border-transparent"
         />
-        <p className="text-sm text-stone-500 mt-2">
-          Showing {filteredCards.length} of {cards.length} cards
-        </p>
+        <div className="flex items-center justify-between mt-4">
+          <p className="text-sm text-stone-500">
+            Showing {filteredCards.length} of {cards.length} cards
+            {favoriteCount > 0 && ` · ${favoriteCount} favorited`}
+          </p>
+          <button
+            onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+            className={`px-4 py-2 rounded-lg transition-colors flex items-center gap-2 ${
+              showFavoritesOnly
+                ? 'bg-amber-700 text-white'
+                : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
+            }`}
+          >
+            <span>{showFavoritesOnly ? '⭐' : '☆'}</span>
+            <span>{showFavoritesOnly ? 'Show All' : 'Favorites Only'}</span>
+          </button>
+        </div>
       </div>
 
       <div className="space-y-3">
-        {filteredCards.map((card) => (
-          <div
-            key={card.id}
-            className="bg-white rounded-lg p-6 shadow hover:shadow-md transition-shadow cursor-pointer"
-            onClick={() => setSelectedCard(card)}
-          >
-            <div className="flex items-start justify-between gap-4">
-              <div className="flex-1">
+        {filteredCards.map((card) => {
+          const isFavorite = progress.find((p) => p.cardId === card.id)?.isFavorite || false;
+          return (
+            <div
+              key={card.id}
+              className="bg-white rounded-lg p-6 shadow hover:shadow-md transition-shadow cursor-pointer"
+              onClick={() => setSelectedCard(card)}
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1">
                 <h3 className="text-xl font-serif text-stone-900 mb-2">
                   {card.front}
                 </h3>
@@ -68,18 +98,31 @@ export default function BrowseView({ cards }: BrowseViewProps) {
                   </div>
                 )}
               </div>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  playAudio(card);
-                }}
-                className="px-3 py-2 text-amber-700 border border-amber-700 rounded-lg hover:bg-amber-50 transition-colors text-sm flex-shrink-0"
-              >
-                🔊
-              </button>
+              <div className="flex gap-2">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onToggleFavorite(card.id);
+                  }}
+                  className="px-3 py-2 hover:bg-amber-50 rounded-lg transition-colors text-2xl flex-shrink-0"
+                  aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                >
+                  {isFavorite ? '⭐' : '☆'}
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    playAudio(card);
+                  }}
+                  className="px-3 py-2 text-amber-700 border border-amber-700 rounded-lg hover:bg-amber-50 transition-colors text-sm flex-shrink-0"
+                >
+                  🔊
+                </button>
+              </div>
             </div>
           </div>
-        ))}
+        );
+        })}
       </div>
 
       {selectedCard && (
@@ -91,13 +134,24 @@ export default function BrowseView({ cards }: BrowseViewProps) {
             className="bg-white rounded-2xl p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              onClick={() => setSelectedCard(null)}
-              className="float-right text-stone-400 hover:text-stone-600"
-            >
-              ✕
-            </button>
-            <h2 className="text-3xl font-serif text-stone-900 mb-4">
+            <div className="flex justify-between items-start mb-4">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onToggleFavorite(selectedCard.id);
+                }}
+                className="text-3xl hover:scale-110 transition-transform"
+              >
+                {progress.find((p) => p.cardId === selectedCard.id)?.isFavorite ? '⭐' : '☆'}
+              </button>
+              <button
+                onClick={() => setSelectedCard(null)}
+                className="text-stone-400 hover:text-stone-600 text-2xl"
+              >
+                ✕
+              </button>
+            </div>
+            <h2 className="text-3xl font-serif text-stone-900 mb-4 mt-2">
               {selectedCard.front}
             </h2>
             <p className="text-2xl text-stone-700 mb-6">{selectedCard.back}</p>
