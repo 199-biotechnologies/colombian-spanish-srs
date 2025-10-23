@@ -9,6 +9,7 @@ export interface Card {
   type: string;
   tags: string;
   level: number;
+  isReverse?: boolean; // For reverse cards (English→Spanish)
 }
 
 export interface CardProgress {
@@ -19,8 +20,18 @@ export interface CardProgress {
   dueDate: Date;
   lastReviewed: Date | null;
   isFavorite?: boolean;
+  personalNotes?: string; // User's personal context/examples
+  guessHistory?: string[]; // Track guesses for new cards
 }
 
 export interface ReviewResult {
   quality: number; // 0-5 (Anki scale: 0=complete blackout, 5=perfect response)
+}
+
+export type StudyMode = 'normal' | 'type-to-answer' | 'listening-first';
+
+export interface StudySettings {
+  mode: StudyMode;
+  showGuessPrompt: boolean; // Guess-before-you-know for new cards
+  includeReverseCards: boolean;
 }

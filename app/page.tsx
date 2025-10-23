@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Card, CardProgress } from '@/lib/types';
+import { Card, CardProgress, StudySettings } from '@/lib/types';
 import { loadCards } from '@/lib/data';
 import {
   initializeCardProgress,
@@ -11,13 +11,16 @@ import {
 } from '@/lib/srs';
 import { loadProgress, saveProgressItem } from '@/lib/storage';
 import { getCardsByCategory } from '@/lib/categories';
+import { generateReverseCards, mixReverseCards } from '@/lib/reverseCards';
 import FlashCard from '@/components/FlashCard';
 import Navigation from '@/components/Navigation';
 import BrowseView from '@/components/BrowseView';
 import CategorySelector from '@/components/CategorySelector';
+import StudyModeSelector from '@/components/StudyModeSelector';
 
 export default function Home() {
   const [cards, setCards] = useState<Card[]>([]);
+  const [allCards, setAllCards] = useState<Card[]>([]); // Includes reverse cards
   const [progress, setProgress] = useState<CardProgress[]>([]);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [studyQueue, setStudyQueue] = useState<Card[]>([]);
@@ -25,6 +28,12 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [categoryMap, setCategoryMap] = useState<Map<string, Card[]>>(new Map());
   const [loading, setLoading] = useState(true);
+  const [showSettings, setShowSettings] = useState(false);
+  const [studySettings, setStudySettings] = useState<StudySettings>({
+    mode: 'normal',
+    showGuessPrompt: false,
+    includeReverseCards: false,
+  });
 
   useEffect(() => {
     async function init() {
@@ -34,7 +43,12 @@ export default function Home() {
       setCards(loadedCards);
       setProgress(loadedProgress);
 
-      // Categorize cards
+      // Generate reverse cards
+      const reverseCards = generateReverseCards(loadedCards);
+      const combinedCards = [...loadedCards, ...reverseCards];
+      setAllCards(combinedCards);
+
+      // Categorize cards (only original cards for category view)
       const catMap = getCardsByCategory(loadedCards);
       setCategoryMap(catMap);
 
@@ -44,11 +58,11 @@ export default function Home() {
     init();
   }, []);
 
-  // Update study queue when category changes
+  // Update study queue when category or settings change
   useEffect(() => {
     if (cards.length === 0) return;
 
-    const cardsToStudy = selectedCategory
+    let cardsToStudy = selectedCategory
       ? categoryMap.get(selectedCategory) || []
       : cards;
 
@@ -64,9 +78,19 @@ export default function Home() {
     );
     const newCards = cardsToStudy.filter((c) => newCardIds.includes(c.id));
 
-    setStudyQueue([...dueCards, ...newCards]);
+    let queue = [...dueCards, ...newCards];
+
+    // Mix in reverse cards if setting enabled
+    if (studySettings.includeReverseCards) {
+      const reverseCardsForCategory = allCards.filter(
+        (c) => c.isReverse && queue.some((q) => q.id === c.id.replace('-reverse', ''))
+      );
+      queue = mixReverseCards(queue, reverseCardsForCategory, 0.3);
+    }
+
+    setStudyQueue(queue);
     setCurrentCardIndex(0);
-  }, [selectedCategory, cards, progress, categoryMap]);
+  }, [selectedCategory, cards, progress, categoryMap, studySettings.includeReverseCards, allCards]);
 
   const handleToggleFavorite = () => {
     if (studyQueue.length === 0) return;
@@ -79,6 +103,33 @@ export default function Home() {
     const updatedProgress = {
       ...currentProgress,
       isFavorite: !currentProgress.isFavorite,
+    };
+
+    saveProgressItem(updatedProgress);
+
+    setProgress((prev) => {
+      const index = prev.findIndex((p) => p.cardId === currentCard.id);
+      if (index >= 0) {
+        const newProgress = [...prev];
+        newProgress[index] = updatedProgress;
+        return newProgress;
+      } else {
+        return [...prev, updatedProgress];
+      }
+    });
+  };
+
+  const handleSavePersonalNote = (note: string) => {
+    if (studyQueue.length === 0) return;
+
+    const currentCard = studyQueue[currentCardIndex];
+    const currentProgress =
+      progress.find((p) => p.cardId === currentCard.id) ||
+      initializeCardProgress(currentCard.id);
+
+    const updatedProgress = {
+      ...currentProgress,
+      personalNotes: note,
     };
 
     saveProgressItem(updatedProgress);
@@ -175,10 +226,16 @@ export default function Home() {
         <div className="container max-w-2xl mx-auto px-6 py-12">
           {studyQueue.length > 0 ? (
             <>
-              <div className="mb-8 text-center">
+              <div className="mb-4 flex items-center justify-between">
                 <p className="text-sm text-stone-500">
                   Card {currentCardIndex + 1} of {studyQueue.length}
                 </p>
+                <button
+                  onClick={() => setShowSettings(true)}
+                  className="px-4 py-2 text-sm text-amber-700 border border-amber-700 rounded-lg hover:bg-amber-50 transition-colors"
+                >
+                  ⚙️ Study Settings
+                </button>
               </div>
               <FlashCard
                 card={studyQueue[currentCardIndex]}
@@ -188,6 +245,17 @@ export default function Home() {
                     ?.isFavorite || false
                 }
                 onToggleFavorite={handleToggleFavorite}
+                studyMode={studySettings.mode}
+                showGuessPrompt={studySettings.showGuessPrompt}
+                isNewCard={
+                  !progress.find((p) => p.cardId === studyQueue[currentCardIndex].id)
+                    ?.lastReviewed
+                }
+                personalNote={
+                  progress.find((p) => p.cardId === studyQueue[currentCardIndex].id)
+                    ?.personalNotes || ''
+                }
+                onSavePersonalNote={handleSavePersonalNote}
               />
             </>
           ) : (
@@ -232,6 +300,14 @@ export default function Home() {
             }
           });
         }} />
+      )}
+
+      {showSettings && (
+        <StudyModeSelector
+          settings={studySettings}
+          onSettingsChange={setStudySettings}
+          onClose={() => setShowSettings(false)}
+        />
       )}
     </div>
   );
