@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Card, CardProgress } from '@/lib/types';
+import { formatCardText, getTextLines } from '@/lib/formatText';
 
 interface BrowseViewProps {
   cards: Card[];
@@ -81,10 +82,10 @@ export default function BrowseView({ cards, progress, onToggleFavorite }: Browse
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
-                <h3 className="text-xl font-serif text-stone-900 mb-2">
-                  {card.front}
+                <h3 className="text-xl font-serif text-stone-900 mb-2 whitespace-pre-line">
+                  {formatCardText(card.front)}
                 </h3>
-                <p className="text-stone-600 mb-3">{card.back}</p>
+                <p className="text-stone-600 mb-3 whitespace-pre-line">{formatCardText(card.back)}</p>
                 {card.tags && (
                   <div className="flex flex-wrap gap-2">
                     {card.tags.split(' ').map((tag, i) => (
@@ -151,10 +152,10 @@ export default function BrowseView({ cards, progress, onToggleFavorite }: Browse
                 ✕
               </button>
             </div>
-            <h2 className="text-3xl font-serif text-stone-900 mb-4 mt-2">
-              {selectedCard.front}
+            <h2 className="text-3xl font-serif text-stone-900 mb-4 mt-2 whitespace-pre-line">
+              {formatCardText(selectedCard.front)}
             </h2>
-            <p className="text-2xl text-stone-700 mb-6">{selectedCard.back}</p>
+            <p className="text-2xl text-stone-700 mb-6 whitespace-pre-line">{formatCardText(selectedCard.back)}</p>
             {selectedCard.notes && (
               <div className="mb-4">
                 <h4 className="text-sm font-semibold text-stone-600 mb-1">

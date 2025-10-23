@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Card } from '@/lib/types';
+import { getTextLines } from '@/lib/formatText';
 
 interface FlashCardProps {
   card: Card;
@@ -75,7 +76,12 @@ export default function FlashCard({ card, onReview, isFavorite, onToggleFavorite
           {!isFlipped ? (
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-serif leading-relaxed text-stone-900 mb-6">
-                {card.front}
+                {getTextLines(card.front).map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    {i < getTextLines(card.front).length - 1 && <br />}
+                  </span>
+                ))}
               </h2>
               <button
                 onClick={(e) => {
@@ -91,7 +97,12 @@ export default function FlashCard({ card, onReview, isFavorite, onToggleFavorite
           ) : (
             <div className="text-center">
               <p className="text-2xl md:text-3xl text-stone-700 leading-relaxed mb-4">
-                {card.back}
+                {getTextLines(card.back).map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    {i < getTextLines(card.back).length - 1 && <br />}
+                  </span>
+                ))}
               </p>
               {card.notes && (
                 <p className="text-sm text-stone-500 italic mt-4">
