@@ -11,7 +11,7 @@ A: ¿Vamos? B: Dale pues.,A: Shall we go? B: Let's do it.,[sound:A_Vamos_B_Dale_
 A: ¿Vamos? B: Mejor otro día.,A: Shall we go? B: Better another day.,[sound:A_Vamos_B_Mejor_otro_día_60b5c64e.mp3],Adjacency pair: invite→decline,¿Te animas a,,basic,pair essential,1
 Acabamos de hablar.,We just talked.,[sound:Acabamos_de_hablar_5affb14e.mp3],,,,basic,pattern frame,1
 Acabo de comer.,I just ate.,[sound:Acabo_de_comer_483993e2.mp3],,,,basic,pattern frame,1
-Acabo de llegar,I just arrived,[sound:Acabo_de_llegar_5db5f04d.mp3],,,,basic,pattern,1
+Acabo de llegar,I just arrived,[sound:Acabo_de_llegar_5db5f04d.mp3],,'Acabar de' + infinitive | Recent past,,basic,pattern,1
 Acabo de ver tu mensaje.,I just saw your message.,[sound:Acabo_de_ver_tu_mensaje_97619331.mp3],,,,basic,pattern frame,1
 Acabo de {{llegar}}.,I just {{arrived}}.,[sound:Acabo_de_llegar_ac13e13e.mp3],Frame: Acabar de + infinitive,,,basic,pattern essential frame,1
 Ahorita te escribo,I'll text you right now,[sound:Ahorita_te_escribo_eae0a248.mp3],I'll text you,,,basic,pattern,1
@@ -135,7 +135,7 @@ Qué quieres que te haga,Do you want me to...,[sound:Qué_quieres_que_te_haga_3c
 Se me acabó la plata.,I ran out of money.,[sound:Se_me_acabó_la_plata_d11df3c2.mp3],ran out on me,,,basic,pattern frame,1
 Se me antoja algo dulce,I (accidentally)...,[sound:Se_me_antoja_algo_dulce_dddbdd39.mp3],,,,basic,pattern,1
 Se me cayó.,I dropped it (it fell from me).,[sound:Se_me_cayó_9774dc9a.mp3],,,,basic,pattern frame,1
-Se me descargó el celular,I (accidentally)...,[sound:Se_me_descargó_el_celular_8124ea28.mp3],died on me,,,basic,pattern,1
+Se me descargó el celular,My phone died,[sound:Se_me_descargó_el_celular_8124ea28.mp3],died on me,Accidental pattern | Battery died,,basic,pattern,1
 Se me descargó el celular.,My phone died (on me).,[sound:Se_me_descargó_el_celular_8124ea28.mp3],died on me,,,basic,pattern frame,1
 Se me hizo tarde.,I got late (it happened to me).,[sound:Se_me_hizo_tarde_87a07d62.mp3],got late on me,,,basic,pattern frame,1
 Se me pasa el tiempo volando contigo,I (accidentally)...,[sound:Se_me_pasa_el_tiempo_volando_contigo_24445160.mp3],,,,basic,pattern,1
@@ -167,7 +167,7 @@ Tengo fiebre y la culpa es tuya,[I have...],[sound:Tengo_fiebre_y_la_culpa_es_tu
 Tengo ganas de verte cuándo te sirve,[I have...],[sound:Tengo_ganas_de_verte_cuándo_te_sirve_5e6f98f7.mp3],,,,basic,verb,1
 Tengo hambre de ti,[I have...],[sound:Tengo_hambre_de_ti_d9fdf238.mp3],,,,basic,verb,1
 Tengo hambre pero no de comida,[I have...],[sound:Tengo_hambre_pero_no_de_comida_3e82d5c7.mp3],,,,basic,verb,1
-Tengo muchas ganas,[I have...],[sound:Tengo_muchas_ganas_3dec2aba.mp3],,,,basic,verb,1
+Tengo muchas ganas,I really want to,[sound:Tengo_muchas_ganas_3dec2aba.mp3],,Strong desire expression,,basic,verb,1
 Tengo muchas ganas de ti,[I have...],[sound:Tengo_muchas_ganas_de_ti_bed19d56.mp3],,,,basic,verb,1
 Tengo sed de ti,[I have...],[sound:Tengo_sed_de_ti_e65a33c9.mp3],,,,basic,verb,1
 Tengo un juguete nuevo,[I have...],[sound:Tengo_un_juguete_nuevo_72714286.mp3],,,,basic,verb,1
@@ -187,7 +187,7 @@ Voy a desconectarme un rato,[I'm going to...],[sound:Voy_a_desconectarme_un_rato
 Voy a salir.,I'm going out.,[sound:Voy_a_salir_e851fa33.mp3],,,,basic,pattern frame,1
 Voy a {{comer}}.,I'm going to {{eat}}.,[sound:Voy_a_comer_60af1263.mp3],Frame: Ir a + infinitive,,,basic,pattern essential frame,1
 Voy en cinco,I'm going...,[sound:Voy_en_cinco_ce7642c1.mp3],,,,basic,verb,1
-Voy saliendo,I'm going...,[sound:Voy_saliendo_121b73b7.mp3],,,,basic,verb,1
+Voy saliendo,I'm leaving now,[sound:Voy_saliendo_121b73b7.mp3],,Progressive 'ir + gerund' | Colombian time expression,,basic,verb,1
 Voy tarde perdón,Sorry...,[sound:Voy_tarde_perdón_8d597732.mp3],,,,basic,greeting,1
 Ya casi.,Almost there / Almost done.,[sound:Ya_casi_91d2fe46.mp3],now/already,,,basic,pattern frame,1
 Ya entendí.,Now I understand / Got it.,[sound:Ya_entendí_d75a5c06.mp3],now/already,,,basic,pattern frame,1
@@ -261,14 +261,14 @@ A mano izquierda,Dude...,[sound:A_mano_izquierda_4a8afbe5.mp3],,,,basic,directio
 Ahí nos vemos,See you there,[sound:Ahí_nos_vemos_1ab98a37.mp3],arranging plans,,,basic,daily plans,2
 Ando en la calle,I'm out and about,[sound:Ando_en_la_calle_2262f982.mp3],Colombian,,,basic,daily location,2
 Aquí se descansa rumbiando,[Aquí se descansa rumbiando...],[sound:Aquí_se_descansa_rumbiando_a0760ab2.mp3],,Acá,,basic,directions,2
-Así me gusta,[Así me gusta],[sound:Así_me_gusta_7780bce0.mp3],,,,basic,daily,2
+Así me gusta,That's how I like it / That's what I like,[sound:Así_me_gusta_7780bce0.mp3],,Approval expression | Common in romantic contexts,,basic,daily,2
 Bájate aquí,[Bájate aquí],[sound:Bájate_aquí_6cde0395.mp3],,Acá,,basic,directions,2
 Cinco minutos más,Five more minutes,[sound:Cinco_minutos_más_d7cdf37c.mp3],daily routine,,,basic,daily sleeping,2
 Confirmado,Confirmed,[sound:Confirmado_f4594f46.mp3],arranging plans,,,basic,daily plans,2
 Dejemos las cosas aquí yo las cuido,[Dejemos las cosas aquí yo las ...],[sound:Dejemos_las_cosas_aquí_yo_las_cuido_42bff819.mp3],,Acá,,basic,directions,2
 Dónde estás,Where...,[sound:Dónde_estás_8e9e13ad.mp3],,,,basic,directions,2
 Dónde nos encontramos,Where...,[sound:Dónde_nos_encontramos_d9466401.mp3],,,,basic,directions,2
-Dónde nos vemos,See you...,[sound:Dónde_nos_vemos_11d9657b.mp3],see you,,,basic,daily,2
+Dónde nos vemos,Where should we meet?,[sound:Dónde_nos_vemos_11d9657b.mp3],see you,Planning meetup location | Very common in WhatsApp,,basic,daily,2
 Dónde queda el baño,Where...,[sound:Dónde_queda_el_baño_a68c0fef.mp3],,,,basic,directions,2
 Dónde queda la vuelta,Where...,[sound:Dónde_queda_la_vuelta_42ee28a7.mp3],,,,basic,directions,2
 El tráfico está horrible,The traffic is horrible,[sound:El_tráfico_está_horrible_084a8515.mp3],daily routine,,,basic,daily traffic,2
@@ -313,10 +313,10 @@ Estoy trabajando,I'm working,[sound:Estoy_trabajando_189e747a.mp3],daily routine
 Estoy trasnochada,I stayed up late (female),[sound:Estoy_trasnochada_a825efbd.mp3],Colombian,,,basic,daily tired,2
 Estoy trasnochado,I stayed up late (male),[sound:Estoy_trasnochado_ea63a85e.mp3],Colombian,,,basic,daily tired,2
 Está lejos o cerquita,[Está lejos o cerquita...],[sound:Está_lejos_o_cerquita_efc1c520.mp3],,,,basic,directions,2
-Hasta luego un abrazo,See you later...,[sound:Hasta_luego_un_abrazo_ba72f1b0.mp3],,,,basic,daily,2
+Hasta luego un abrazo,"See you later, a hug",[sound:Hasta_luego_un_abrazo_ba72f1b0.mp3],,Warm affectionate goodbye | Common in Colombian texting,,basic,daily,2
 Hay mucho trancón,There's heavy traffic,[sound:Hay_mucho_trancón_4b70763a.mp3],Colombian,,,basic,daily traffic,2
 Listo entonces,Ok then,[sound:Listo_entonces_90e66fd6.mp3],arranging plans,,,basic,daily plans,2
-Llegué al hotel todo bien,[all good...],[sound:Llegué_al_hotel_todo_bien_90fbf5c1.mp3],,Tranqui,,basic,daily,2
+Llegué al hotel todo bien,"I arrived at the hotel, all good",[sound:Llegué_al_hotel_todo_bien_90fbf5c1.mp3],,Safe arrival message | 'Todo bien' = everything's okay,,basic,daily,2
 Me acabo de bañar,I just showered,[sound:Me_acabo_de_bañar_54195131.mp3],daily routine,,,basic,daily hygiene,2
 Me acabo de despertar,I just woke up,[sound:Me_acabo_de_despertar_cb9f33e2.mp3],daily routine,,,basic,daily sleeping,2
 Me acosté tarde,I went to bed late,[sound:Me_acosté_tarde_f3fdd720.mp3],daily routine,,,basic,daily sleeping,2
@@ -325,7 +325,7 @@ Me demoré,I got delayed,[sound:Me_demoré_df3e81d6.mp3],daily routine,,,basic,d
 Me estoy alistando,I'm getting ready,[sound:Me_estoy_alistando_c2e6dd8d.mp3],daily routine,,,basic,daily getting_ready,2
 Me estoy arreglando,I'm getting dressed/ready,[sound:Me_estoy_arreglando_3037113d.mp3],daily routine,,,basic,daily getting_ready,2
 Me estoy bañando,I'm showering,[sound:Me_estoy_bañando_ed3c7cd5.mp3],daily routine,,,basic,daily hygiene,2
-Me gusta cómo me miras,How...,[sound:Me_gusta_cómo_me_miras_b1f221ff.mp3],,,,basic,daily,2
+Me gusta cómo me miras,I like the way you look at me,[sound:Me_gusta_cómo_me_miras_b1f221ff.mp3],,Romantic/flirty | Expressing attraction,,basic,daily,2
 Me gusta cómo somos juntos,How...,[sound:Me_gusta_cómo_somos_juntos_f3623bea.mp3],,,,basic,daily,2
 Me gustas mucho,I really like you,[sound:Me_gustas_mucho_4df79657.mp3],,,,basic,daily,2
 Me gustas más que un día festivo con pue,I like you...,[sound:Me_gustas_más_que_un_día_festivo_con_pue_22b89c8a.mp3],,,,basic,daily,2
@@ -347,7 +347,7 @@ Perdón la demora,Sorry for the delay,[sound:Perdón_la_demora_e65cbb42.mp3],dai
 Por allá,That way,[sound:Por_allá_13241497.mp3],,,,basic,directions,2
 Por dónde queda,Where...,[sound:Por_dónde_queda_7c5ecca2.mp3],,,,basic,directions,2
 Prefieres que vaya yo hasta allá,Already/Now...,[sound:Prefieres_que_vaya_yo_hasta_allá_7032c350.mp3],now/already,,,basic,directions,2
-Quiubo todo bien,[all good...],[sound:Quiubo_todo_bien_175bf13b.mp3],,Tranqui,,basic,daily,2
+Quiubo todo bien,"What's up, all good?",[sound:Quiubo_todo_bien_175bf13b.mp3],,Super informal Colombian greeting,,basic,daily,2
 Qué pereza levantarse,What a drag to get up,[sound:Qué_pereza_levantarse_1038c9da.mp3],Colombian,,,basic,daily sleeping lazy,2
 Salgo del trabajo a las seis,I get off work at six,[sound:Salgo_del_trabajo_a_las_seis_6a526c74.mp3],daily routine,,,basic,daily work,2
 Se me hizo tarde,I'm running late,[sound:Se_me_hizo_tarde_9924bd51.mp3],daily routine,,,basic,daily late,2
@@ -357,7 +357,7 @@ Sigue derecho dos cuadras,[Sigue derecho dos cuadras...],[sound:Sigue_derecho_do
 Somos amigos con derechos,[Somos amigos con derechos...],[sound:Somos_amigos_con_derechos_009c7a96.mp3],,,,basic,directions,2
 Te escribo cuando salga,I'll text you when I leave,[sound:Te_escribo_cuando_salga_9a3fd868.mp3],arranging plans,,,basic,daily plans,2
 Te estoy esperando,I'm waiting for you,[sound:Te_estoy_esperando_cc29e906.mp3],daily routine,,,basic,daily waiting,2
-Te recojo o nos vemos allá,See you...,[sound:Te_recojo_o_nos_vemos_allá_bf0a37c7.mp3],see you,,,basic,daily,2
+Te recojo o nos vemos allá,Should I pick you up or meet there?,[sound:Te_recojo_o_nos_vemos_allá_bf0a37c7.mp3],see you,Plan coordination question,,basic,daily,2
 Tengo hambre,I'm hungry,[sound:Tengo_hambre_eff04da6.mp3],daily routine,,,basic,daily eating,2
 Tengo mucho que hacer,I have a lot to do,[sound:Tengo_mucho_que_hacer_c0e23551.mp3],daily routine,,,basic,daily busy,2
 Tengo que estudiar,I have to study,[sound:Tengo_que_estudiar_0b413a4f.mp3],daily routine,,,basic,daily studying,2
@@ -367,7 +367,7 @@ Todo bien por acá,[all good...],[sound:Todo_bien_por_acá_1cd0439b.mp3],,Aquí,
 Todo bien por allá,[all good...],[sound:Todo_bien_por_allá_6f5cfc07.mp3],,Tranqui,,basic,daily,2
 Todo bien todo bien,[all good...],[sound:Todo_bien_todo_bien_a031c1ec.mp3],,Tranqui,,basic,daily,2
 Todo bien tranquila,[all good...],[sound:Todo_bien_tranquila_71cbf918.mp3],soften/decline,Todo bien,,basic,daily,2
-Tranqui todo bien,[all good...],[sound:Tranqui_todo_bien_027d8f18.mp3],soften/decline,Todo bien,,basic,daily,2
+Tranqui todo bien,"Chill, all good",[sound:Tranqui_todo_bien_027d8f18.mp3],soften/decline,Quintessential Colombian reassurance,,basic,daily,2
 Voltea a la derecha,[Voltea a la derecha],[sound:Voltea_a_la_derecha_ae8e8e06.mp3],,,,basic,directions,2
 Voltea a la izquierda,[Voltea a la izquierda...],[sound:Voltea_a_la_izquierda_d336e8ff.mp3],,,,basic,directions,2
 Voy a bañarme,I'm going to shower,[sound:Voy_a_bañarme_63429ae5.mp3],daily routine,,,basic,daily hygiene,2
@@ -394,27 +394,27 @@ Ya voy para allá,I'm on my way there,[sound:Ya_voy_para_allá_91fa5b8e.mp3],dai
 ¿Tienes planes hoy?,Do you have plans today?,[sound:Tienes_planes_hoy_38ae4ed1.mp3],arranging plans,,,basic,daily plans,2
 ¿Ya comiste?,Did you eat already?,[sound:Ya_comiste_ae324679.mp3],daily routine,,,basic,daily eating,2
 ¿Ya vienes?,Are you coming?,[sound:Ya_vienes_2211f3e0.mp3],daily routine,,,basic,daily waiting,2
-A cómo está,How...,[sound:A_cómo_está_7e5fbc0f.mp3],,,,basic,general,3
-A qué hora es la función,What...,[sound:A_qué_hora_es_la_función_f10882aa.mp3],,,,basic,general,3
-A qué hora te sirve,What...,[sound:A_qué_hora_te_sirve_7fbe70b4.mp3],,,,basic,general,3
+A cómo está,How much is it?,[sound:A_cómo_está_7e5fbc0f.mp3],,Colombian informal price question | More common than '¿Cuánto cuesta?',,basic,general,3
+A qué hora es la función,What time is the show?,[sound:A_qué_hora_es_la_función_f10882aa.mp3],,Asking about movie/theater showtime,,basic,general,3
+A qué hora te sirve,What time works for you?,[sound:A_qué_hora_te_sirve_7fbe70b4.mp3],,Polite availability question | 'Servir' = to suit/work for someone,,basic,general,3
 A qué horas,What...,[sound:A_qué_horas_ef403379.mp3],,,,basic,general,3
-A ver si puedes,[A ver si puedes],[sound:A_ver_si_puedes_433ee139.mp3],,,,basic,general,3
-Abrázame,[Abrázame],[sound:Abrázame_4dbb5e85.mp3],,,,basic,general,3
-Aceptan tarjeta,[Aceptan tarjeta],[sound:Aceptan_tarjeta_40520836.mp3],,,,basic,general,3
-Aceptan transferencia o Nequi,[Aceptan transferencia o Nequi...],[sound:Aceptan_transferencia_o_Nequi_b04b29d6.mp3],,,,basic,general,3
-Acepto la invitación,[Acepto la invitación...],[sound:Acepto_la_invitación_fd3b9302.mp3],,,,basic,general,3
-Acuéstate conmigo,[Acuéstate conmigo],[sound:Acuéstate_conmigo_561be82c.mp3],,,,basic,general,3
-Acércate,[Acércate],[sound:Acércate_847ca0ad.mp3],,,,basic,general,3
+A ver si puedes,Let's see if you can,[sound:A_ver_si_puedes_433ee139.mp3],,Challenge or encouragement | Can be playful or confrontational,,basic,general,3
+Abrázame,Hug me,[sound:Abrázame_4dbb5e85.mp3],,Intimate imperative | Between close people,,basic,general,3
+Aceptan tarjeta,Do you accept card?,[sound:Aceptan_tarjeta_40520836.mp3],,Payment method question | Short for credit/debit card,,basic,general,3
+Aceptan transferencia o Nequi,Do you accept transfer or Nequi?,[sound:Aceptan_transferencia_o_Nequi_b04b29d6.mp3],,Digital payment | Nequi is Colombian digital wallet by Bancolombia,,basic,general,3
+Acepto la invitación,I accept the invitation,[sound:Acepto_la_invitación_fd3b9302.mp3],,Formal acceptance of invite,,basic,general,3
+Acuéstate conmigo,Lie down with me,[sound:Acuéstate_conmigo_561be82c.mp3],,Intimate request | Romantic/close relationship,,basic,general,3
+Acércate,Come closer / Get closer,[sound:Acércate_847ca0ad.mp3],,Imperative to move nearer | Can be romantic or neutral,,basic,general,3
 Ahorita mismo,Right now...,[sound:Ahorita_mismo_355dce7b.mp3],right now (CO),,,basic,general,3
-Ahí hablamos,[Ahí hablamos],[sound:Ahí_hablamos_f9524e57.mp3],,,,basic,general,3
-Ahí vamos,[Ahí vamos],[sound:Ahí_vamos_43a927e2.mp3],,¿Te animas a,,basic,general,3
-Al frente de,[Al frente de],[sound:Al_frente_de_b46717b6.mp3],,,,basic,general,3
-Al lado de,[Al lado de],[sound:Al_lado_de_a074935e.mp3],,,,basic,general,3
-Algo suave o con alcohol,[Algo suave o con alcohol...],[sound:Algo_suave_o_con_alcohol_3f1120d3.mp3],,,,basic,general,3
-Almorzamos juntos mañana,Tomorrow...,[sound:Almorzamos_juntos_mañana_ac136b02.mp3],,,,basic,general,3
-Almorzaste ya,Already/Now...,[sound:Almorzaste_ya_7bf5c1f8.mp3],now/already,,,basic,general,3
-Almuerzo y cena también,[Almuerzo y cena también...],[sound:Almuerzo_y_cena_también_9fdea585.mp3],,,,basic,general,3
-Alquilamos sombrilla,[Alquilamos sombrilla...],[sound:Alquilamos_sombrilla_4f17596d.mp3],,,,basic,general,3
+Ahí hablamos,We'll talk then / Talk to you later,[sound:Ahí_hablamos_f9524e57.mp3],,Casual goodbye | Implies future conversation,,basic,general,3
+Ahí vamos,We're going / Let's go / Here we go,[sound:Ahí_vamos_43a927e2.mp3],,"Multiple uses: departure, progress, encouragement",,basic,general,3
+Al frente de,In front of,[sound:Al_frente_de_b46717b6.mp3],,Location preposition,,basic,general,3
+Al lado de,Next to / Beside,[sound:Al_lado_de_a074935e.mp3],,Location preposition,,basic,general,3
+Algo suave o con alcohol,Something soft (non-alcoholic) or with alcohol?,[sound:Algo_suave_o_con_alcohol_3f1120d3.mp3],,Drink preference question | 'Suave' = non-alcoholic in Colombian Spanish,,basic,general,3
+Almorzamos juntos mañana,Let's have lunch together tomorrow,[sound:Almorzamos_juntos_mañana_ac136b02.mp3],,Informal lunch invitation,,basic,general,3
+Almorzaste ya,Did you already eat lunch? / Have you had lunch?,[sound:Almorzaste_ya_7bf5c1f8.mp3],now/already,Checking if someone has eaten,,basic,general,3
+Almuerzo y cena también,Lunch and dinner too,[sound:Almuerzo_y_cena_también_9fdea585.mp3],,Meal plans confirmation,,basic,general,3
+Alquilamos sombrilla,Should we rent an umbrella?,[sound:Alquilamos_sombrilla_4f17596d.mp3],,Beach question about umbrella rental,,basic,general,3
 Anterior,[Anterior],[sound:Anterior_4826ce9c.mp3],,,,basic,general,3
 Antier,[Antier],[sound:Antier_d8780eee.mp3],,,,basic,general,3
 Aprecio mucho lo que haces por mí,[Aprecio mucho lo que haces por...],[sound:Aprecio_mucho_lo_que_haces_por_mí_c6cf1988.mp3],,,,basic,general,3
@@ -437,7 +437,7 @@ Bésame,[Bésame],[sound:Bésame_c061a18f.mp3],,,,basic,general,3
 Bésame todo,[Bésame todo],[sound:Bésame_todo_620470a0.mp3],,,,basic,general,3
 Cachái,[Cachái],[sound:Cachái_d1d93622.mp3],,,,basic,general,3
 Cada día entiendo un poquito más,[Cada día entiendo un poquito m...],[sound:Cada_día_entiendo_un_poquito_más_96492289.mp3],,,,basic,general,3
-Caminamos por la orilla,[Caminamos por la orilla...],[sound:Caminamos_por_la_orilla_f5d46bde.mp3],,,,basic,general,3
+Caminamos por la orilla,Let's walk along the shore,[sound:Caminamos_por_la_orilla_f5d46bde.mp3],,Beach/riverside walk suggestion,,basic,general,3
 Caminemos un rato,[Caminemos un rato],[sound:Caminemos_un_rato_3424aa40.mp3],,,,basic,general,3
 Chao hablamos más tarde,Bye...,[sound:Chao_hablamos_más_tarde_a1559c02.mp3],,,,basic,general,3
 Cien,hundred,[sound:Cien_c8513195.mp3],,,,basic,general,3
@@ -460,7 +460,7 @@ Contigo me siento en casa,[Contigo me siento en casa...],[sound:Contigo_me_sient
 Contigo todo es diferente,[Contigo todo es diferente...],[sound:Contigo_todo_es_diferente_52d1dd86.mp3],,,,basic,general,3
 Convénceme,[Convénceme],[sound:Convénceme_f78ad6ec.mp3],,,,basic,general,3
 Creo que necesito terapia intensiva,[Creo que necesito terapia inte...],[sound:Creo_que_necesito_terapia_intensiva_33308c94.mp3],,,,basic,general,3
-Cruzando la calle,[Cruzando la calle],[sound:Cruzando_la_calle_b5c26ee5.mp3],,,,basic,general,3
+Cruzando la calle,Crossing the street,[sound:Cruzando_la_calle_b5c26ee5.mp3],,Location/direction,,basic,general,3
 Cuando te sientas bien celebremos,[Cuando te sientas bien celebre...],[sound:Cuando_te_sientas_bien_celebremos_46662013.mp3],,,,basic,general,3
 Cuando tú quieras,[Cuando tú quieras],[sound:Cuando_tú_quieras_1f2d7654.mp3],informal/intimate,,,basic,general,3
 Cuarenta,forty,[sound:Cuarenta_f793d4b4.mp3],,,,basic,general,3
@@ -468,7 +468,7 @@ Cuarto,[Cuarto],[sound:Cuarto_6e8da25b.mp3],,,,basic,general,3
 Cuarto para las cuatro,[Cuarto para las cuatro...],[sound:Cuarto_para_las_cuatro_da5bbc30.mp3],,,,basic,general,3
 Cuidado con los carros,[Cuidado con los carros...],[sound:Cuidado_con_los_carros_e1e2eaf2.mp3],,,,basic,general,3
 Cuál es el plato del día,Which...,[sound:Cuál_es_el_plato_del_día_9ab4d4b8.mp3],,,,basic,general,3
-Cuántas cuadras,[Cuántas cuadras],[sound:Cuántas_cuadras_2ce97f9c.mp3],,,,basic,general,3
+Cuántas cuadras,How many blocks?,[sound:Cuántas_cuadras_2ce97f9c.mp3],,Distance question,,basic,general,3
 Cuánto cuesta,How much...,[sound:Cuánto_cuesta_e13593cb.mp3],,,,basic,general,3
 Cuánto es,How much...,[sound:Cuánto_es_94b09f3a.mp3],,,,basic,general,3
 Cuánto falta,How much...,[sound:Cuánto_falta_6c274e5a.mp3],,,,basic,general,3
@@ -520,7 +520,7 @@ El mejor descanso es rumbear más,I rest...,[sound:El_mejor_descanso_es_rumbear_
 El mes que viene,[El mes que viene],[sound:El_mes_que_viene_28e70e54.mp3],,,,basic,general,3
 El show debe continuar,[El show debe continuar...],[sound:El_show_debe_continuar_f5f28f22.mp3],,,,basic,general,3
 Emergencia en mi cuarto,[Emergencia en mi cuarto...],[sound:Emergencia_en_mi_cuarto_24a1346e.mp3],,,,basic,general,3
-En la esquina,[En la esquina],[sound:En_la_esquina_92f67816.mp3],,,,basic,general,3
+En la esquina,On/At the corner,[sound:En_la_esquina_92f67816.mp3],,Location description,,basic,general,3
 En serio,[En serio],[sound:En_serio_6f83e02a.mp3],,,,basic,general,3
 En un momentico,[En un momentico],[sound:En_un_momentico_3ce58c5a.mp3],,,,basic,general,3
 En un ratico,[En un ratico],[sound:En_un_ratico_a0cbe1e9.mp3],short while (CO),,,basic,general,3
@@ -707,7 +707,7 @@ Necesito verte,[Necesito verte],[sound:Necesito_verte_194981da.mp3],,,,basic,gen
 Nel,[Nel],[sound:Nel_26fd5c72.mp3],,,,basic,general,3
 Netflix and chill,[Netflix and chill],[sound:Netflix_and_chill_f20cc08e.mp3],,,,basic,general,3
 Ni de vainas,[Ni de vainas],[sound:Ni_de_vainas_8a735b4e.mp3],,,,basic,general,3
-Ni por el putas,[Ni por el putas],[sound:Ni_por_el_putas_93737b2e.mp3],,,,basic,general,3
+Ni por el putas,Not for shit / No fucking way,[sound:Ni_por_el_putas_93737b2e.mp3],,Strong negative | Vulgar expression,,basic,general,3
 No aguanto más sin verte,I don't/No...,[sound:No_aguanto_más_sin_verte_4acf0d51.mp3],,,,basic,general,3
 No busco nada serio,I don't/No...,[sound:No_busco_nada_serio_9938b18d.mp3],,,,basic,general,3
 No era mi intención,I don't/No...,[sound:No_era_mi_intención_1de817d5.mp3],,,,basic,general,3
@@ -725,7 +725,7 @@ No way,I don't/No...,[sound:No_way_006e65c5.mp3],,,,basic,general,3
 Normal,[Normal],[sound:Normal_2f89aeb8.mp3],,,,basic,general,3
 Nos hablamos más tardecito,Later...,[sound:Nos_hablamos_más_tardecito_a9d10c09.mp3],,,,basic,general,3
 Nos pueden sentar afuera o adentro,[Nos pueden sentar afuera o ade...],[sound:Nos_pueden_sentar_afuera_o_adentro_bf46f2f0.mp3],,,,basic,general,3
-Nos trae agua porfa,Please (casual)...,[sound:Nos_trae_agua_porfa_10c2e061.mp3],,Por favor,,basic,general,3
+Nos trae agua porfa,Can you bring us water please?,[sound:Nos_trae_agua_porfa_10c2e061.mp3],,Casual restaurant request | 'Porfa' = shortened 'por favor',,basic,general,3
 Noventa,[Noventa],[sound:Noventa_2c67c8c3.mp3],,,,basic,general,3
 Nunca había sentido esto,[Nunca había sentido esto...],[sound:Nunca_había_sentido_esto_647e1e98.mp3],,,,basic,general,3
 Nunca te dejaré,[Nunca te dejaré],[sound:Nunca_te_dejaré_fb356ed4.mp3],,,,basic,general,3
@@ -737,14 +737,14 @@ Otra vez,[Otra vez],[sound:Otra_vez_fd81e90f.mp3],,,,basic,general,3
 Otro jugocerveza porfa,Please (casual)...,[sound:Otro_jugocerveza_porfa_834f520b.mp3],,Por favor,,basic,general,3
 Pana,[Pana],[sound:Pana_6f9ddc64.mp3],,,,basic,general,3
 Para compartir porfa,Please (casual)...,[sound:Para_compartir_porfa_504acff6.mp3],,Por favor,,basic,general,3
-Para en la esquina,[Para en la esquina],[sound:Para_en_la_esquina_f087b267.mp3],,,,basic,general,3
+Para en la esquina,Stop at the corner,[sound:Para_en_la_esquina_f087b267.mp3],,Direction to taxi/driver,,basic,general,3
 Para llevar porfa,Please (casual)...,[sound:Para_llevar_porfa_86ec709a.mp3],,Por favor,,basic,general,3
 Para mí lo mismo,[Para mí lo mismo],[sound:Para_mí_lo_mismo_b24e1ec7.mp3],,,,basic,general,3
 Para nada,[Para nada],[sound:Para_nada_371520bd.mp3],,,,basic,general,3
 Para siempre,[Para siempre],[sound:Para_siempre_400cd618.mp3],,,,basic,general,3
 Parce,Buddy/Mate,[sound:Parce_28f92d83.mp3],buddy (Colombian),,,basic,slang,3
-Parce suave,[buddy...],[sound:Parce_suave_4091e99d.mp3],buddy (Colombian),,,basic,slang,3
-Parceroparcera,[buddy...],[sound:Parceroparcera_b9b4768c.mp3],buddy (Colombian),,,basic,slang,3
+Parce suave,Easy buddy / Relax dude / Chill bro,[sound:Parce_suave_4091e99d.mp3],buddy (Colombian),Calming expression | Paisa slang,,basic,slang,3
+Parceroparcera,Buddy / Partner / My friend,[sound:Parceroparcera_b9b4768c.mp3],buddy (Colombian),Paisa term of friendship,,basic,slang,3
 Pasado mañana,Tomorrow...,[sound:Pasado_mañana_9383dad7.mp3],,,,basic,general,3
 Pasemos el rato,[Pasemos el rato],[sound:Pasemos_el_rato_734bc764.mp3],,,,basic,general,3
 Pasemos la noche juntos,[Pasemos la noche juntos...],[sound:Pasemos_la_noche_juntos_d848b7b6.mp3],,,,basic,general,3
@@ -763,7 +763,7 @@ Pilas con el hueco,[Pilas con el hueco],[sound:Pilas_con_el_hueco_fb22cd44.mp3],
 Piquito,[Piquito],[sound:Piquito_7c18c1d1.mp3],,,,basic,general,3
 Podemos ir un ratico,[Podemos ir un ratico...],[sound:Podemos_ir_un_ratico_5ee5bc15.mp3],short while (CO),,,basic,general,3
 Policía te arrestó por estar tan buenobu,[Policía te arrestó por estar t...],[sound:Policía_te_arrestó_por_estar_tan_buenobu_4be60fe8.mp3],,,,basic,general,3
-Por acá,[Por acá],[sound:Por_acá_e6337f3e.mp3],,Aquí,,basic,general,3
+Por acá,This way / Over here,[sound:Por_acá_e6337f3e.mp3],,Directional indication,,basic,general,3
 Por ahí sí,[Por ahí sí],[sound:Por_ahí_sí_fb4b417f.mp3],,,,basic,general,3
 Por supuesto,[Por supuesto],[sound:Por_supuesto_20cc1fcd.mp3],,,,basic,general,3
 Preciosa,Precious/Beautiful,[sound:Preciosa_24a1aee0.mp3],,,,basic,general,3
@@ -794,7 +794,7 @@ Quieres pasar,[Quieres pasar],[sound:Quieres_pasar_9a877c67.mp3],,,,basic,genera
 Quieres salir conmigo,[Quieres salir conmigo...],[sound:Quieres_salir_conmigo_699a6cc1.mp3],,,,basic,general,3
 Quieres ser mi novia,[Quieres ser mi novia...],[sound:Quieres_ser_mi_novia_04e53ee7.mp3],,,,basic,general,3
 Quisiera ser tu almohada para estar en t,[Quisiera ser tu almohada para ...],[sound:Quisiera_ser_tu_almohada_para_estar_en_t_0a436f15.mp3],,,,basic,general,3
-Quiubo parce,[buddy...],[sound:Quiubo_parce_a1690359.mp3],buddy (Colombian),,,basic,slang,3
+Quiubo parce,What's up buddy / Hey dude,[sound:Quiubo_parce_a1690359.mp3],buddy (Colombian),Paisa greeting | Very informal,,basic,slang,3
 Qué alegría escucharte,What...,[sound:Qué_alegría_escucharte_0aa77072.mp3],,,,basic,general,3
 Qué boleta,What...,[sound:Qué_boleta_2fe14727.mp3],,,,basic,general,3
 Qué buena energía,What...,[sound:Qué_buena_energía_4587b416.mp3],,,,basic,general,3
@@ -817,8 +817,8 @@ Qué música te gusta,What...,[sound:Qué_música_te_gusta_dd85e1f3.mp3],,,,basi
 Qué nota,What...,[sound:Qué_nota_c60c884c.mp3],,,,basic,general,3
 Qué nota,What...,[sound:Qué_nota_f9cb5537.mp3],,,,basic,general,3
 Qué ojos tan lindos tienes,What...,[sound:Qué_ojos_tan_lindos_tienes_6e2e1d73.mp3],,,,basic,general,3
-Qué pena llego tarde,[I'm sorry / how embarrassing...],[sound:Qué_pena_llego_tarde_5eb549e2.mp3],sorry/embarrassed,,,basic,slang,3
-Qué pena no entendí,[I'm sorry / how embarrassing...],[sound:Qué_pena_no_entendí_56655ea4.mp3],sorry/embarrassed,,,basic,slang,3
+Qué pena llego tarde,I'm so sorry I'm late,[sound:Qué_pena_llego_tarde_5eb549e2.mp3],sorry/embarrassed,'Qué pena' = Colombian politeness expression,,basic,slang,3
+Qué pena no entendí,"I'm sorry, I didn't understand",[sound:Qué_pena_no_entendí_56655ea4.mp3],sorry/embarrassed,'Qué pena' = Colombian apology,,basic,slang,3
 Qué pereza,What a drag/How lazy,[sound:Qué_pereza_a876e4b3.mp3],,,,basic,general,3
 Qué plan para hoy,Today...,[sound:Qué_plan_para_hoy_7cc4c691.mp3],,,,basic,general,3
 Qué quieres pedir,What...,[sound:Qué_quieres_pedir_816d3c0c.mp3],,,,basic,general,3
@@ -950,10 +950,10 @@ Un montón,[Un montón],[sound:Un_montón_6ed9bc22.mp3],,,,basic,general,3
 Un poquito,[Un poquito],[sound:Un_poquito_356c786f.mp3],,,,basic,general,3
 Un resto,[Un resto],[sound:Un_resto_109fc643.mp3],,,,basic,general,3
 Un segundo porfa,Please (casual)...,[sound:Un_segundo_porfa_32a4892f.mp3],,Por favor,,basic,general,3
-Un tinto porfa,Please (casual)...,[sound:Un_tinto_porfa_824d6a97.mp3],,Por favor,,basic,slang,3
-Una chimba de,[awesome...],[sound:Una_chimba_de_f5b4085d.mp3],awesome (Colombian),,,basic,slang,3
-Una pola,Beer...,[sound:Una_pola_a60e5e3a.mp3],,,,basic,slang,3
-Uy qué chimba,[awesome...],[sound:Uy_qué_chimba_3d446171.mp3],awesome (Colombian),,,basic,slang,3
+Un tinto porfa,A coffee please / A black coffee please,[sound:Un_tinto_porfa_824d6a97.mp3],,'Tinto' = black coffee in Colombia | 'Porfa' = please (casual),,basic,slang,3
+Una chimba de,An awesome [something] / A badass [something],[sound:Una_chimba_de_f5b4085d.mp3],awesome (Colombian),'Chimba' = awesome/cool (can be vulgar in some contexts),,basic,slang,3
+Una pola,A beer / A cold one,[sound:Una_pola_a60e5e3a.mp3],,Colombian beer slang,,basic,slang,3
+Uy qué chimba,"Wow, how awesome! / Holy shit, that's cool!",[sound:Uy_qué_chimba_3d446171.mp3],awesome (Colombian),Excitement expression | Mild vulgarity,,basic,slang,3
 Vale,OK,[sound:Vale_1b3a5be8.mp3],,,,basic,general,3
 Vamos a caminar un ratico,[Vamos a caminar un ratico...],[sound:Vamos_a_caminar_un_ratico_3366d5ff.mp3],short while (CO),¿Te animas a,,basic,general,3
 Vamos a la barra un momento,[Vamos a la barra un momento...],[sound:Vamos_a_la_barra_un_momento_7244c786.mp3],,¿Te animas a,,basic,general,3
@@ -993,24 +993,24 @@ Yo manejo vamos suave,Dude...,[sound:Yo_manejo_vamos_suave_d006024d.mp3],,¿Te a
 Yo pongo la música tú eliges el lugar,[Yo pongo la música tú eliges e...],[sound:Yo_pongo_la_música_tú_eliges_el_lugar_403822cd.mp3],informal/intimate,,,basic,general,3
 Ñeroñera,[Ñeroñera],[sound:Ñeroñera_3b16c9d0.mp3],,,,basic,general,3
 Último,[Último],[sound:Último_691f73c6.mp3],,,,basic,general,3
-911 necesito un beso,[911 necesito un beso...],[sound:911_necesito_un_beso_963b6c8b.mp3],,,,basic,romance,4
+911 necesito un beso,911 I need a kiss,[sound:911_necesito_un_beso_963b6c8b.mp3],,Playful emergency language | Very romantic/flirty,,basic,romance,4
 Amor de mi vida,My life (term of endearment)...,[sound:Amor_de_mi_vida_4505b873.mp3],,,,basic,romance,4
-Crees en el amor a primera vista o paso ,[Crees en el amor a primera vis...],[sound:Crees_en_el_amor_a_primera_vista_o_paso__09f6c1bb.mp3],,,,basic,romance,4
+Crees en el amor a primera vista o paso ,"Do you believe in love at first sight, or should I walk by again?",[sound:Crees_en_el_amor_a_primera_vista_o_paso__09f6c1bb.mp3],,Classic pickup line,,basic,romance,4
 Cómo amaneció mi amor,My love...,[sound:Cómo_amaneció_mi_amor_7eab72f7.mp3],,,,basic,romance,4
 Dame un abrazo,[Dame un abrazo],[sound:Dame_un_abrazo_6c0bbc68.mp3],,,,basic,romance,4
 Dame un beso,Give me a kiss,[sound:Dame_un_beso_bb8cec9f.mp3],,,,basic,romance,4
-Duerme rico mi amor,My love...,[sound:Duerme_rico_mi_amor_2a8f0a03.mp3],,,,basic,romance,4
+Duerme rico mi amor,Sleep well my love,[sound:Duerme_rico_mi_amor_2a8f0a03.mp3],,'Rico' = well/sweetly in Colombian Spanish | Bedtime endearment,,basic,romance,4
 Eres mi amor,My love...,[sound:Eres_mi_amor_129cf9cc.mp3],,,,basic,romance,4
-Hagamos el amor,[Hagamos el amor],[sound:Hagamos_el_amor_5c10f7fb.mp3],,,,basic,romance,4
+Hagamos el amor,Let's make love,[sound:Hagamos_el_amor_5c10f7fb.mp3],,Intimate/sexual | Very intimate register,,basic,romance,4
 Hasta mañana mi amorcito,Tomorrow...,[sound:Hasta_mañana_mi_amorcito_2914c1bc.mp3],,,,basic,romance,4
 Ojalá te sientas mejor mi amor,My love...,[sound:Ojalá_te_sientas_mejor_mi_amor_3868c289.mp3],,,,basic,romance,4
-Si el amor fuera agua yo te daría el mar,[Si el amor fuera agua yo te da...],[sound:Si_el_amor_fuera_agua_yo_te_daría_el_mar_19dd4678.mp3],,,,basic,romance,4
+Si el amor fuera agua yo te daría el mar,"If love were water, I would give you the sea",[sound:Si_el_amor_fuera_agua_yo_te_daría_el_mar_19dd4678.mp3],,Poetic romantic expression,,basic,romance,4
 Siempre serás mi amor,My love...,[sound:Siempre_serás_mi_amor_01e40049.mp3],,,,basic,romance,4
 Solo abrazos hoy,Today...,[sound:Solo_abrazos_hoy_14e63313.mp3],,,,basic,romance,4
 Te amo,I love you,[sound:Te_amo_88cd788a.mp3],,,,basic,romance,4
 Te extraño,I miss you,[sound:Te_extraño_b1da1832.mp3],,,,basic,romance,4
 Te extraño mucho,I miss you...,[sound:Te_extraño_mucho_751024b4.mp3],,,,basic,romance,4
-Te extraño un resto,I miss you...,[sound:Te_extraño_un_resto_b7eb01ab.mp3],,,,basic,romance,4
+Te extraño un resto,I miss you a ton,[sound:Te_extraño_un_resto_b7eb01ab.mp3],,'Un resto' = a lot (Medellín slang),,basic,romance,4
 Tus besos me vuelven locoloca,[Tus besos me vuelven locoloca...],[sound:Tus_besos_me_vuelven_locoloca_52741875.mp3],,,,basic,romance,4
 Un beso hablamos después,Later...,[sound:Un_beso_hablamos_después_755dea84.mp3],,,,basic,romance,4
 Te deseo,[Te deseo],[sound:Te_deseo_1019893b.mp3],,,,basic,intimate,5
@@ -1057,7 +1057,7 @@ Tengo un problema,I have a problem,,,,,,,basic problem,2
 ¿Puedes explicar eso?,Can you explain that?,,,,¿Puedes explicarlo?,,,basic problem question,2
 Esto no funciona,This doesn't work,,,,,,,basic problem,2
 ¿Dónde está mi...?,Where is my...?,,,,,,,basic problem question,2
-Se me olvidó,I forgot,,Literally: It forgot itself to me,Se me fue de la mente,,,basic problem,2
+Se me olvidó,I forgot,,Literally: It forgot itself to me,Accidental 'se me' pattern,,,basic problem,2
 ¿Puedes hablar más despacio?,Can you speak more slowly?,,,,¿Puedes hablar más lento?,,,basic problem question,2
 No me queda claro,It's not clear to me / I don't understand,,,,,,,basic problem,2
 ¿Me repites?,Can you repeat to me?,,,,¿Puedes repetir?,,,basic problem question,2
