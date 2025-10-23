@@ -62,7 +62,7 @@ export default function Navigation({ view, setView, selectedCategory, onBackToCa
                   : 'text-stone-600 hover:bg-stone-100'
               }`}
             >
-              🎮 Match
+              Match
             </button>
           </div>
         </div>

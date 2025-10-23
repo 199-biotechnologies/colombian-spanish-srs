@@ -1071,3 +1071,76 @@ Estoy de acuerdo,I agree,,,,,,,basic opinion,2
 No estoy de acuerdo,I don't agree / I disagree,,,,No concuerdo,,,basic opinion,2
 Me gusta eso,I like that,,,,,,,basic opinion,2
 No me gusta,I don't like it,,,,,,,basic opinion,2
+¿Vos qué pensás?,What do you think? (vos form),,,¿Y vos qué opinás?,,basic,questions vos,2
+¿Y vos qué decís?,And what do you say? (vos form),,,,,basic,questions vos,2
+¿Vos querés ir?,Do you want to go? (vos form),,,¿Querés venir?,,basic,questions vos,2
+¿Vos sabés dónde es?,Do you know where it is? (vos form),,,¿Sabés dónde queda?,,basic,questions vos,2
+¿Vos entendés?,Do you understand? (vos form),,,¿Me entendés?,,basic,questions vos,2
+¿Vos tenés tiempo?,Do you have time? (vos form),,,¿Tenés un ratito?,,basic,questions vos,2
+¿Vos conocés este lugar?,Do you know this place? (vos form),,,,,basic,questions vos,2
+¿Vos comés carne?,Do you eat meat? (vos form),,,¿Vos tomás café?,,basic,questions vos,2
+¿Vos podés ayudarme?,Can you help me? (vos form),,,¿Me ayudás?,,basic,questions vos,2
+¿Vos vas a ir?,Are you going to go? (vos form),,,¿Vas a venir?,,basic,questions vos,2
+¿Qué hacés?,What are you doing? (vos form),,,¿Qué estás haciendo?,,basic,questions vos,2
+¿Cómo te llamás?,What's your name? (vos form),,,¿Cuál es tu nombre?,,basic,questions vos greeting,1
+¿De dónde sos?,Where are you from? (vos form),,,¿De qué parte sos?,,basic,questions vos,2
+¿Vos vivís por acá?,Do you live around here? (vos form),,,¿Vivís cerca?,,basic,questions vos,2
+¿Vos trabajás o estudiás?,Do you work or study? (vos form),,,¿Qué hacés?,,basic,questions vos,2
+¿Me colaborás con esto?,Can you help me with this? (Colombian),,,¿Me ayudás?,,basic,questions help colombian,2
+¿Me colaborás un segundo?,Can you help me for a second? (Colombian),,,¿Me das una mano?,,basic,questions help colombian,2
+Me colaborás y me pasás la sal,Help me out and pass me the salt (Colombian),,,¿Me pasás la sal?,,basic,questions help colombian,2
+¿Me colaborás con la cuenta?,Can you help me with the bill? (Colombian),,,¿Me ayudás a pagar?,,basic,questions help colombian,2
+¿Me colaborás a cargar esto?,Can you help me carry this? (Colombian),,,¿Me ayudás a cargar?,,basic,questions help colombian,2
+¿Me hacés un favor?,Can you do me a favor?,,,¿Me ayudás?,,basic,questions help,2
+Ayudame un toque,Help me out a bit,,,Dame una mano,,basic,requests help,2
+¿Me echás una mano?,Can you give me a hand?,,,¿Me ayudás?,,basic,questions help,2
+Necesito tu ayuda,I need your help,,,,,basic,requests help,2
+¿Me podés ayudar con esto?,Can you help me with this?,,,¿Me colaborás?,,basic,questions help,2
+Cuadremos para mañana,Let's arrange/plan for tomorrow (Colombian),,,Arreglamos para mañana,,basic,planning colombian,2
+¿Cuadramos algo?,Shall we arrange something? (Colombian),,,¿Hacemos algo?,,basic,questions planning colombian,2
+¿A qué horas cuadramos?,What time shall we arrange? (Colombian),,,¿A qué hora quedamos?,,basic,questions planning colombian,2
+Yo te cuadro,I'll arrange it with you (Colombian),,,Yo organizo,,basic,planning colombian,2
+Cuadramos después,We'll arrange it later (Colombian),,,Lo arreglamos después,,basic,planning colombian,2
+¿Cuadramos para el fin de semana?,Shall we arrange for the weekend? (Colombian),,,¿Nos vemos el fin de semana?,,basic,questions planning colombian,2
+Cuadra con los parceros,Arrange it with the buddies (Colombian),,,Organiza con los amigos,,basic,planning colombian,2
+Ya cuadré todo,I already arranged everything (Colombian),,,Ya organicé todo,,basic,planning colombian,2
+¿Querés una arepa?,Do you want an arepa?,,,¿Te provoca una arepa?,,basic,food colombian,2
+Me traés un tinto porfa,Bring me a coffee please (Colombian),,,Un café porfa,,basic,food colombian requests,2
+Vamos por unas onces,Let's go for afternoon snack (Colombian),,,Vamos a comer algo,,basic,food colombian,2
+¿Qué desayunás?,What do you have for breakfast?,,,¿Qué comés en la mañana?,,basic,questions food,2
+Me comí una bandeja paisa,I ate a bandeja paisa (Colombian dish),,,,,basic,food colombian,2
+¿Querés un buñuelo?,Do you want a buñuelo? (Colombian fried dough),,,,,basic,food colombian,2
+Tomemos aguapanela,Let's drink aguapanela (Colombian drink),,,,,basic,food colombian,2
+¿Pedimos empanadas?,Should we order empanadas?,,,,,basic,questions food colombian,2
+El sancocho está delicioso,The sancocho is delicious (Colombian soup),,,,,basic,food colombian,2
+¿Te gusta el ajiaco?,Do you like ajiaco? (Colombian soup),,,,,basic,questions food colombian,2
+Me antoja un patacón,I'm craving a patacón (fried plantain),,,,,basic,food colombian,2
+¿Vamos por unos chuzos?,Shall we get some chuzos? (Colombian skewers),,,,,basic,questions food colombian,2
+Compremos pandebono,Let's buy pandebono (Colombian cheese bread),,,,,basic,food colombian,2
+El calentado está rico,The calentado is good (Colombian leftover dish),,,,,basic,food colombian,2
+¿Querés mazamorra?,Do you want mazamorra? (Colombian corn drink),,,,,basic,questions food colombian,2
+Traeme una aguadepanela caliente,Bring me a hot aguadepanela,,,,,basic,requests food colombian,2
+¿Pedimos lechona?,Should we order lechona? (Colombian stuffed pork),,,,,basic,questions food colombian,2
+Me encantan las almojábanas,I love almojábanas (Colombian cheese bread),,,,,basic,food colombian,2
+¿Hay tamales?,Are there tamales?,,,,,basic,questions food colombian,2
+El changua es raro pero rico,Changua is weird but tasty (Colombian milk soup),,,,,basic,food colombian opinion,2
+Me gustás,I like you (romantic),,,Me caés bien,,basic,romance colombian,3
+¿Salimos algún día?,Should we go out sometime?,,,¿Tomamos algo?,,basic,questions romance,3
+Sos linda/lindo,You're pretty/handsome (vos form),,,Sos muy bonita/bonito,,basic,romance colombian,3
+Me parece que sos chistoso/a,I think you're funny (vos form),,,,,basic,romance opinion colombian,3
+¿Tenés novio/novia?,Do you have a boyfriend/girlfriend?,,,¿Estás con alguien?,,basic,questions romance,3
+Estoy soltero/a,I'm single,,,No tengo pareja,,basic,romance,3
+¿Te gustaría salir?,Would you like to go out?,,,¿Querés que salgamos?,,basic,questions romance,3
+Me caés muy bien,I really like you (as a person),,,Me gustás,,basic,romance,3
+Sos muy simpático/a,You're very nice (vos form),,,,,basic,romance colombian,3
+¿Puedo invitarte a algo?,Can I buy you something?,,,¿Te invito algo?,,basic,questions romance,3
+Me encanta hablar con vos,I love talking with you (vos form),,,,,basic,romance colombian,3
+¿Me pasás tu número?,Can you give me your number? (vos form),,,¿Me regalás tu número?,,basic,questions romance colombian,3
+Estás muy bonita hoy,You look very pretty today,,,Te ves linda,,basic,romance,3
+¿Vos tenés WhatsApp?,Do you have WhatsApp? (vos form),,,,,basic,questions romance colombian,3
+Me gusta tu estilo,I like your style,,,,,basic,romance,3
+Sos muy inteligente,You're very intelligent (vos form),,,,,basic,romance colombian,3
+¿Querés tomar algo?,Do you want to get a drink?,,,¿Tomamos algo?,,basic,questions romance,3
+Me la paso bien con vos,I have a good time with you (vos form),,,La paso bien contigo,,basic,romance colombian,3
+¿Cuándo nos vemos?,When do we see each other?,,,¿Cuándo salimos?,,basic,questions romance,3
+Me hiciste reír,You made me laugh,,,,,basic,romance,3

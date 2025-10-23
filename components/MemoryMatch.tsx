@@ -103,12 +103,12 @@ export default function MemoryMatch() {
 
       setSelected(null);
 
-      // Replace with new words after a short delay
+      // Replace with new words after 2.5 seconds to keep empty space visible
       setIsReplacing(true);
       setTimeout(() => {
         replaceMatchedPair(selectedPair, clickedPair);
         setIsReplacing(false);
-      }, 600);
+      }, 2500);
     } else {
       // Not a match - reset selection and break streak
       setStreak(0);
@@ -126,32 +126,25 @@ export default function MemoryMatch() {
     const newWord = unusedWords[Math.floor(Math.random() * unusedWords.length)];
     const timestamp = Date.now();
 
-    setPairs(prev => {
-      const updated = prev.map(p => {
-        if (p.id === pair1.id) {
-          return {
-            id: `${newWord.spanish}-${timestamp}-spanish`,
-            word: newWord,
-            column: 1 as 1 | 2,
-            matched: false,
-          };
-        }
-        if (p.id === pair2.id) {
-          return {
-            id: `${newWord.english}-${timestamp}-english`,
-            word: newWord,
-            column: 2 as 1 | 2,
-            matched: false,
-          };
-        }
-        return p;
-      });
-
-      // Re-shuffle columns for variety
-      const col1 = shuffle(updated.filter(p => p.column === 1));
-      const col2 = shuffle(updated.filter(p => p.column === 2));
-      return [...col1, ...col2];
-    });
+    setPairs(prev => prev.map(p => {
+      if (p.id === pair1.id) {
+        return {
+          id: `${newWord.spanish}-${timestamp}-spanish`,
+          word: newWord,
+          column: 1 as 1 | 2,
+          matched: false,
+        };
+      }
+      if (p.id === pair2.id) {
+        return {
+          id: `${newWord.english}-${timestamp}-english`,
+          word: newWord,
+          column: 2 as 1 | 2,
+          matched: false,
+        };
+      }
+      return p;
+    }));
   }
 
   const column1Items = pairs.filter(p => p.column === 1);
