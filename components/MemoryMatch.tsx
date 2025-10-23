@@ -10,6 +10,13 @@ interface MatchPair {
   matched: boolean;
 }
 
+interface WordDifficulty {
+  word: string;
+  weight: number; // Higher = appears more often
+  wrongAttempts: number;
+  lastAttemptTime: number;
+}
+
 export default function MemoryMatch() {
   const [pairs, setPairs] = useState<MatchPair[]>([]);
   const [selected, setSelected] = useState<{ id: string; column: 1 | 2 } | null>(null);
@@ -18,6 +25,8 @@ export default function MemoryMatch() {
   const [pendingReplacements, setPendingReplacements] = useState<Set<string>>(new Set());
   const [flashGood, setFlashGood] = useState(false);
   const [flashBad, setFlashBad] = useState(false);
+  const [wordDifficulties, setWordDifficulties] = useState<Map<string, WordDifficulty>>(new Map());
+  const [attemptStartTime, setAttemptStartTime] = useState<number | null>(null);
 
   // Initialize game with 6 random words
   useEffect(() => {
@@ -25,7 +34,7 @@ export default function MemoryMatch() {
   }, []);
 
   function initializeGame() {
-    const selectedWords = getRandomWords(6);
+    const selectedWords = getWeightedRandomWords(6);
     const newPairs: MatchPair[] = [];
 
     selectedWords.forEach((word, index) => {
@@ -53,9 +62,80 @@ export default function MemoryMatch() {
     setPairs([...column1, ...column2]);
   }
 
-  function getRandomWords(count: number): CoreWord[] {
-    const shuffled = [...coreVocabulary].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, count);
+  function getWeightedRandomWords(count: number, exclude: Set<string> = new Set()): CoreWord[] {
+    // Get available words (not currently in play)
+    const available = coreVocabulary.filter(w => !exclude.has(w.spanish));
+
+    // Calculate total weight
+    let totalWeight = 0;
+    const weights = available.map(word => {
+      const difficulty = wordDifficulties.get(word.spanish);
+      const weight = difficulty?.weight ?? 1.0;
+      totalWeight += weight;
+      return { word, weight };
+    });
+
+    // Weighted random selection
+    const selected: CoreWord[] = [];
+    const remaining = [...weights];
+
+    for (let i = 0; i < count && remaining.length > 0; i++) {
+      const random = Math.random() * totalWeight;
+      let cumulative = 0;
+
+      for (let j = 0; j < remaining.length; j++) {
+        cumulative += remaining[j].weight;
+        if (random <= cumulative) {
+          selected.push(remaining[j].word);
+          totalWeight -= remaining[j].weight;
+          remaining.splice(j, 1);
+          break;
+        }
+      }
+    }
+
+    return selected;
+  }
+
+  function updateWordDifficulty(wordSpanish: string, correct: boolean, timeTaken?: number) {
+    setWordDifficulties(prev => {
+      const current = prev.get(wordSpanish) || {
+        word: wordSpanish,
+        weight: 1.0,
+        wrongAttempts: 0,
+        lastAttemptTime: Date.now(),
+      };
+
+      let newWeight = current.weight;
+
+      if (correct) {
+        // Fast match (<2s) - reduce weight
+        if (timeTaken && timeTaken < 2000) {
+          newWeight = Math.max(0.1, newWeight - 0.3);
+        }
+        // Slow match (>5s) - increase weight slightly
+        else if (timeTaken && timeTaken > 5000) {
+          newWeight = Math.min(5.0, newWeight + 0.5);
+        }
+        // Normal match (2-5s) - slight decrease
+        else {
+          newWeight = Math.max(0.1, newWeight - 0.1);
+        }
+      } else {
+        // Wrong match - significantly increase weight
+        newWeight = Math.min(5.0, newWeight + 2.0);
+      }
+
+      const updated = new Map(prev);
+      updated.set(wordSpanish, {
+        word: wordSpanish,
+        weight: newWeight,
+        wrongAttempts: correct ? current.wrongAttempts : current.wrongAttempts + 1,
+        lastAttemptTime: Date.now(),
+      });
+
+      return updated;
+    });
   }
 
   function shuffle<T>(array: T[]): T[] {
@@ -72,9 +152,10 @@ export default function MemoryMatch() {
     const pair = pairs.find(p => p.id === id);
     if (!pair || pair.matched || pendingReplacements.has(id)) return;
 
-    // If no selection, select this one
+    // If no selection, select this one and start timing
     if (!selected) {
       setSelected({ id, column });
+      setAttemptStartTime(Date.now());
       return;
     }
 
@@ -98,6 +179,11 @@ export default function MemoryMatch() {
       // Match! Flash green
       setFlashGood(true);
       setTimeout(() => setFlashGood(false), 300);
+
+      // Calculate time taken and update difficulty (correct match)
+      const timeTaken = attemptStartTime ? Date.now() - attemptStartTime : undefined;
+      updateWordDifficulty(selectedPair.word.spanish, true, timeTaken);
+      setAttemptStartTime(null);
 
       setScore(score + 10);
       setStreak(streak + 1);
@@ -131,6 +217,11 @@ export default function MemoryMatch() {
       setFlashBad(true);
       setTimeout(() => setFlashBad(false), 400);
 
+      // Increase difficulty for both words involved in wrong match
+      if (selectedPair) updateWordDifficulty(selectedPair.word.spanish, false);
+      if (clickedPair) updateWordDifficulty(clickedPair.word.spanish, false);
+      setAttemptStartTime(null);
+
       setStreak(0);
       setSelected(null);
     }
@@ -146,15 +237,13 @@ export default function MemoryMatch() {
       const matchedWords = new Set(matchedPairs.map(p => p.word.spanish));
       const numPairsToReplace = matchedWords.size;
 
-      // Get unused words
-      const unusedWords = coreVocabulary.filter(w =>
-        !prev.some(p => p.word.spanish === w.spanish && !p.matched)
-      );
+      // Get words currently in play (not matched)
+      const inPlay = new Set(prev.filter(p => !p.matched).map(p => p.word.spanish));
 
-      if (unusedWords.length === 0) return prev; // All words used
+      // Get weighted random new words (excluding those currently in play)
+      const newWords = getWeightedRandomWords(numPairsToReplace, inPlay);
 
-      // Get random new words
-      const newWords = shuffle(unusedWords).slice(0, numPairsToReplace);
+      if (newWords.length === 0) return prev; // All words used
 
       // Get indices of matched cards in each column
       const col1Indices = prev
