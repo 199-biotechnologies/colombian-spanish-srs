@@ -226,7 +226,7 @@ export default function Home() {
             <>
               <div className="mb-4 flex items-center justify-between">
                 <p className="text-sm text-stone-500">
-                  Card {currentCardIndex + 1} of {studyQueue.length}
+                  {studyQueue.length} {studyQueue.length === 1 ? 'card' : 'cards'} remaining
                 </p>
                 <button
                   onClick={() => setShowSettings(true)}
