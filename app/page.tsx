@@ -17,6 +17,7 @@ import Navigation from '@/components/Navigation';
 import BrowseView from '@/components/BrowseView';
 import CategorySelector from '@/components/CategorySelector';
 import StudyModeSelector from '@/components/StudyModeSelector';
+import MemoryMatch from '@/components/MemoryMatch';
 
 export default function Home() {
   const [cards, setCards] = useState<Card[]>([]);
@@ -24,7 +25,7 @@ export default function Home() {
   const [progress, setProgress] = useState<CardProgress[]>([]);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [studyQueue, setStudyQueue] = useState<Card[]>([]);
-  const [view, setView] = useState<'study' | 'browse' | 'categories'>('categories');
+  const [view, setView] = useState<'study' | 'browse' | 'categories' | 'match'>('categories');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [categoryMap, setCategoryMap] = useState<Map<string, Card[]>>(new Map());
   const [loading, setLoading] = useState(true);
@@ -270,6 +271,8 @@ export default function Home() {
             </div>
           )}
         </div>
+      ) : view === 'match' ? (
+        <MemoryMatch />
       ) : (
         <BrowseView
           cards={selectedCategory ? (categoryMap.get(selectedCategory) || []) : cards}

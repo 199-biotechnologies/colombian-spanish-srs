@@ -3,8 +3,8 @@
 import { getCategoryById } from '@/lib/categories';
 
 interface NavigationProps {
-  view: 'study' | 'browse' | 'categories';
-  setView: (view: 'study' | 'browse' | 'categories') => void;
+  view: 'study' | 'browse' | 'categories' | 'match';
+  setView: (view: 'study' | 'browse' | 'categories' | 'match') => void;
   selectedCategory?: string | null;
   onBackToCategories?: () => void;
 }
@@ -53,6 +53,16 @@ export default function Navigation({ view, setView, selectedCategory, onBackToCa
               }`}
             >
               Browse
+            </button>
+            <button
+              onClick={() => setView('match')}
+              className={`px-4 py-2 rounded-lg transition-colors ${
+                view === 'match'
+                  ? 'bg-amber-700 text-white'
+                  : 'text-stone-600 hover:bg-stone-100'
+              }`}
+            >
+              🎮 Match
             </button>
           </div>
         </div>
