@@ -79,6 +79,34 @@ export const categories: Category[] = [
     emoji: '🔄',
     priority: 10,
   },
+  {
+    id: 'questions-curiosity',
+    name: 'Questions & Curiosity',
+    description: 'Ask questions - Qué, Cómo, Por qué, Cuándo, Dónde, Cuál',
+    emoji: '❓',
+    priority: 2.5,
+  },
+  {
+    id: 'connectors-logic',
+    name: 'Connectors & Logic',
+    description: 'Link ideas - porque, entonces, pero, aunque, para, si, como',
+    emoji: '🔗',
+    priority: 3.5,
+  },
+  {
+    id: 'problems-solutions',
+    name: 'Problems & Solutions',
+    description: 'Handle issues - Perdón, Ayuda, No funciona, No entiendo',
+    emoji: '🆘',
+    priority: 4,
+  },
+  {
+    id: 'street-intimate',
+    name: 'Street & Intimate',
+    description: 'Raw Colombian slang, sexual expressions, street language',
+    emoji: '🔥',
+    priority: 11,
+  },
 ];
 
 export function categorizeCard(card: Card): string {
@@ -93,17 +121,107 @@ export function categorizeCard(card: Card): string {
     tags.includes('essential') && (
       front.includes('hola') ||
       front.includes('gracias') ||
-      front.includes('perdón') ||
+      front.includes('perdón') && !front.includes('disculpa') || // Basic sorry, not problem-solving
       front.includes('por favor') ||
-      front.includes('sí') ||
-      front.includes('no') ||
-      front.includes('¿cómo') ||
-      front.includes('¿dónde') ||
-      front.includes('¿qué') ||
-      front.includes('¿cuánto')
+      front.includes('sí') && !front.includes('¿') ||
+      front.includes('no') && !front.includes('¿')
     )
   ) {
     return 'survival';
+  }
+
+  // Questions & Curiosity - HIGH PRIORITY
+  if (
+    front.includes('¿qué') ||
+    front.includes('¿cómo') ||
+    front.includes('¿por qué') ||
+    front.includes('¿cuándo') ||
+    front.includes('¿dónde') ||
+    front.includes('¿cuál') ||
+    front.includes('¿cuáles') ||
+    front.includes('¿cuánto') ||
+    front.includes('¿cuánta') ||
+    front.includes('¿quién') ||
+    front.includes('¿de dónde') ||
+    front.includes('¿a dónde') ||
+    front.includes('¿para qué') ||
+    tags.includes('question')
+  ) {
+    return 'questions-curiosity';
+  }
+
+  // Connectors & Logic - conversation glue
+  if (
+    front.includes('porque') && !front.includes('¿por qué') ||
+    front.includes('entonces') && !front.includes('¿') ||
+    front.includes('pero') ||
+    front.includes('aunque') ||
+    front.includes('para que') ||
+    front.includes('para ') && (front.includes('infinitive') || front.includes('+')) ||
+    front.includes('si ') && !front.includes('sí') ||
+    front.includes('cuando ') && !front.includes('¿cuándo') ||
+    front.includes('como ') && !front.includes('¿cómo') ||
+    front.includes('mientras') ||
+    front.includes('además') ||
+    front.includes('también') ||
+    front.includes('tampoco') ||
+    tags.includes('connector') ||
+    tags.includes('logic')
+  ) {
+    return 'connectors-logic';
+  }
+
+  // Problems & Solutions - handling issues
+  if (
+    front.includes('disculpa') ||
+    front.includes('perdón') && (front.includes('disculpa') || front.includes('ayuda')) ||
+    front.includes('ayuda') ||
+    front.includes('no funciona') ||
+    front.includes('no entiendo') ||
+    front.includes('problema') ||
+    front.includes('error') ||
+    front.includes('¿qué hago') ||
+    front.includes('emergencia') ||
+    front.includes('perdido') ||
+    front.includes('perdida') ||
+    front.includes('confundido') ||
+    front.includes('no sé') ||
+    front.includes('socorro') ||
+    tags.includes('problem') ||
+    tags.includes('help') ||
+    tags.includes('emergency')
+  ) {
+    return 'problems-solutions';
+  }
+
+  // Street & Intimate - raw Colombian slang, sexual
+  if (
+    front.includes('hijueputa') ||
+    front.includes('hp') ||
+    front.includes('malparido') ||
+    front.includes('culiar') ||
+    front.includes('coger') && tags.includes('sex') ||
+    front.includes('chingar') ||
+    front.includes('verga') ||
+    front.includes('puta') && !front.includes('hijueputa') ||
+    front.includes('polla') ||
+    front.includes('culo') ||
+    front.includes('tetas') ||
+    front.includes('mamada') ||
+    front.includes('chupada') ||
+    front.includes('caliente') && tags.includes('sex') ||
+    front.includes('cachondo') ||
+    front.includes('follar') ||
+    front.includes('joder') ||
+    front.includes('mierda') ||
+    front.includes('cagar') ||
+    front.includes('cabrón') ||
+    tags.includes('vulgar') ||
+    tags.includes('sexual') ||
+    tags.includes('street') ||
+    tags.includes('explicit')
+  ) {
+    return 'street-intimate';
   }
 
   // Conversation Flow (60-80 cards)
