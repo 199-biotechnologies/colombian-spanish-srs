@@ -30,10 +30,24 @@ export default function Home() {
   const [categoryMap, setCategoryMap] = useState<Map<string, Card[]>>(new Map());
   const [loading, setLoading] = useState(true);
   const [showSettings, setShowSettings] = useState(false);
-  const [studySettings, setStudySettings] = useState<StudySettings>({
-    mode: 'normal',
-    showGuessPrompt: false,
-    includeReverseCards: false,
+  const [studySettings, setStudySettings] = useState<StudySettings>(() => {
+    // Load settings from localStorage on initialization
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('studySettings');
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch (e) {
+          console.error('Failed to parse study settings:', e);
+        }
+      }
+    }
+    // Default settings
+    return {
+      mode: 'normal',
+      showGuessPrompt: false,
+      includeReverseCards: true, // Default to ON - bidirectional learning
+    };
   });
 
   useEffect(() => {
@@ -58,6 +72,13 @@ export default function Home() {
 
     init();
   }, []);
+
+  // Save settings to localStorage whenever they change
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('studySettings', JSON.stringify(studySettings));
+    }
+  }, [studySettings]);
 
   // Update study queue when category or settings change
   useEffect(() => {

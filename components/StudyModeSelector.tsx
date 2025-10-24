@@ -123,13 +123,13 @@ export default function StudyModeSelector({ settings, onSettingsChange, onClose 
                 />
                 <div className="flex-1">
                   <div className="font-semibold text-stone-900 mb-1">
-                    🔄 Include Reverse Cards
+                    🔄 Reverse Cards (English→Spanish)
                   </div>
                   <div className="text-sm text-stone-600 mb-2">
-                    Mix in English→Spanish production practice (30% of cards)
+                    Practice PRODUCING Spanish from English prompts (30% mix)
                   </div>
                   <div className="text-xs text-amber-700 font-medium">
-                    50% better transfer (Bidirectional Learning)
+                    ⭐ RECOMMENDED: 50% better speaking ability
                   </div>
                 </div>
               </label>
