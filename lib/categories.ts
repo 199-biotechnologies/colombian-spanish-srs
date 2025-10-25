@@ -194,8 +194,13 @@ export function categorizeCard(card: Card): string {
     return 'problems-solutions';
   }
 
-  // Street & Intimate - raw Colombian slang, sexual
+  // Street & Intimate - raw Colombian slang, sexual, intimate
   if (
+    tags.includes('vulgar') ||
+    tags.includes('sexual') ||
+    tags.includes('street') ||
+    tags.includes('explicit') ||
+    tags.includes('intimate') ||
     front.includes('hijueputa') ||
     front.includes('hp') ||
     front.includes('malparido') ||
@@ -216,10 +221,13 @@ export function categorizeCard(card: Card): string {
     front.includes('mierda') ||
     front.includes('cagar') ||
     front.includes('cabrón') ||
-    tags.includes('vulgar') ||
-    tags.includes('sexual') ||
-    tags.includes('street') ||
-    tags.includes('explicit')
+    front.includes('chupar') ||
+    front.includes('venirse') ||
+    front.includes('acabar') && tags.includes('intimate') ||
+    front.includes('mojada') ||
+    front.includes('mojado') ||
+    front.includes('duro') && tags.includes('intimate') ||
+    front.includes('oral') && tags.includes('intimate')
   ) {
     return 'street-intimate';
   }

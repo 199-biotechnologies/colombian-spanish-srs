@@ -58,7 +58,7 @@ export default function CategorySelector({
                 {category.description}
               </p>
               <p className="text-xs font-medium text-amber-700">
-                {count} cards · Priority {category.priority}
+                {count} cards
               </p>
             </button>
           );
