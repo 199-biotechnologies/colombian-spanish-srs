@@ -1,0 +1,134 @@
+Alargué mi viaje un día más me voy el vi,I'm going...,verb
+Con solo mirarte se me olvida hasta mi n,I (accidentally)...,pattern
+Eres como Cartagena hermosa y me quiero ,[I want...],verb
+Estoy practicando español ahora hasta qu,[I am...],verb
+Estoy prendido suave todo bien,[I am...],verb
+Estoy tragado,[I am...],verb
+Gracias pero esta vez paso,Thanks...,greeting
+Gracias por confiar en mí,Thanks...,greeting
+Gracias por cuidarmepor estar pendiente,Thanks...,greeting
+Gracias por decirme cómo te sientes,Thanks...,greeting
+Gracias por existir,Thanks...,greeting
+Gracias por todo eres un gran ser humano,Thanks...,greeting
+Gracias por tu mensaje tan lindo mi amor,Thanks...,greeting
+Gracias por tu tiempo y tu cariño,Thanks...,greeting
+Hoy estoy cansadito te parece si dejamos,How about we...,pattern
+Hoy estoy tragado de ti,[I am...],verb
+Hoy te voy a castigar,[I'm going to...],pattern
+La pasé muy bien gracias,Very good...,greeting
+Lo puedo cambiar si no me queda,[I can...],verb
+Me gusta cómo suena tu español quiero ap,[I want...],verb
+Me lo puedo medir,[I can...],verb
+Me voy a venir,[I'm going to...],pattern
+Mucho gusto soy Boris,[Mucho gusto soy Boris...],verb
+No estoy listalisto,[I am...],verb
+No puedo ahora pero más tarde sí,[I can...],verb
+No puedo dejar de pensar en ti,[I can...],verb
+No puedo resistirme a ti,[I can...],verb
+No quiero que te preocupes por mí estoy ,[I am...],verb
+No soy fotógrafo pero puedo imaginarnos ,[I can...],verb
+No soy matemático pero tú  yo  destino,I don't/No...,verb
+No tengo sueño,[I have...],verb
+Perdón por no responder antes,Sorry...,greeting
+Perdón si te hice sentir mal,Sorry...,greeting
+Puedo llamarte un momentico,[I can...],verb
+Puedo pagar en cuotas,[I can...],verb
+Quieres que pase por ti,Do you want me to...,pattern
+Quieres que te lleve una pastica o algo,Do you want me to...,pattern
+Quieres que te pida un taxi,Do you want me to...,pattern
+Quiero algo serio contigo,[I want...],verb
+Quiero besarte,[I want...],verb
+Quiero dormir contigo,[I want...],verb
+Quiero formar una familia contigo,[I want...],verb
+Quiero hacerte el amor,[I want...],verb
+Quiero que estemos bien tú y yo,[I want...],verb
+Quiero que estemos bien y nos cuidemos,[I want...],verb
+Quiero sentirte,[I want...],verb
+Quiero un futuro contigo,[I want...],verb
+Quiero verte pronto,[I want...],verb
+Qué quieres que te haga,Do you want me to...,pattern
+Se me antoja algo dulce,I (accidentally)...,pattern
+Se me pasa el tiempo volando contigo,I (accidentally)...,pattern
+Si necesitas puedo pasar un ratico,[I can...],verb
+Sin ti no soy nada,[Sin ti no soy nada],verb
+Soy todatodo tuyo,[Soy todatodo tuyo],verb
+Soy tu paciente favoritofavorita,[Soy tu paciente favoritofavori...],verb
+Te escribo cuando llegue,[Te escribo cuando llegue...],pattern
+Te escribo cuando vaya saliendo,Already/Now...,pattern
+Te parece si lo planificamos bien y te a,How about we...,pattern
+Te parece si nos vemos más tardecito,How about we...,pattern
+Te quiero de desayuno,[I want...],verb
+Te quiero mucho,[I want...],verb
+Te quiero un montón,[I want...],verb
+Te voy a comer a besos,[I'm going to...],pattern
+Tengo cólicos,[I have...],verb
+Tengo fiebre y la culpa es tuya,[I have...],verb
+Tengo ganas de verte cuándo te sirve,[I have...],verb
+Tengo hambre de ti,[I have...],verb
+Tengo hambre pero no de comida,[I have...],verb
+Tengo muchas ganas de ti,[I have...],verb
+Tengo sed de ti,[I have...],verb
+Tengo un juguete nuevo,[I have...],verb
+Tengo un problema que solo tú puedes res,[I have...],verb
+Tengo una sorpresa para ti,[I have...],verb
+Todo bien Estoy pendiente,[I am...],verb
+Todo bien Estoy pendiente de ti,[I am...],verb
+Voy a desconectarme un rato,[I'm going to...],pattern
+Voy en cinco,I'm going...,verb
+Voy tarde perdón,Sorry...,greeting
+Ya voy en camino,Already/Now...,verb
+Yo tengo condones,[I have...],verb
+A mano derecha,Dude...,directions
+A mano izquierda,Dude...,directions
+Aquí se descansa rumbiando,[Aquí se descansa rumbiando...],directions
+Bájate aquí,[Bájate aquí],directions
+Dejemos las cosas aquí yo las cuido,[Dejemos las cosas aquí yo las ...],directions
+Dónde estás,Where...,directions
+Dónde nos encontramos,Where...,directions
+Dónde queda el baño,Where...,directions
+Dónde queda la vuelta,Where...,directions
+Eres la única razón por la que me gusta ,You're the only reason I like...,basic
+Está lejos o cerquita,[Está lejos o cerquita...],directions
+Me gustas más que un día festivo con pue,I like you...,daily
+Nos quedamos aquí o vamos allá,[Nos quedamos aquí o vamos allá...],directions
+Nos sentamos aquí,[Nos sentamos aquí],directions
+Nos vemos mañana cuídate mucho,See you...,daily
+Por dónde queda,Where...,directions
+Prefieres que vaya yo hasta allá,Already/Now...,directions
+Sigue derecho,[Sigue derecho],directions
+Sigue derecho dos cuadras,[Sigue derecho dos cuadras...],directions
+Somos amigos con derechos,[Somos amigos con derechos...],directions
+Todo bien todo bien,[all good...],daily
+Todo bien tranquila,[all good...],daily
+Voltea a la derecha,[Voltea a la derecha],directions
+Voltea a la izquierda,[Voltea a la izquierda...],directions
+Bacán,[Bacán],social
+Bailamos,[Bailamos],activities
+Bailamos pegaditos,[Bailamos pegaditos],activities
+Cuál es el plato del día,Which...,food
+Cómo sigues,How...,health
+De maravilla,[De maravilla],social
+Descansar es seguir la rumba,Party...,slang
+Está chévere este lugar,Cool...,social
+Hablas muy bonito,[Hablas muy bonito],social
+Me calientas,[Me calientas],intimate
+Me duele la cabeza,[Me duele la cabeza],health
+Me prendiste,[Me prendiste],intimate
+Otro jugocerveza porfa,Please (casual)...,requests_offers
+Pasemos el rato,[Pasemos el rato],activities
+Qué rico,What...,social
+Qué rico papámamá,What...,social
+Qué rico se siente,What...,social
+Qué significa boletachimbarecocha,[awesome...],slang
+Si besarte fuera pecado caminaría feliz ,[Si besarte fuera pecado camina...],intimate
+Si te sientes mal avísame de una,[for sure...],slang
+Si te sientes mejor hablamos esta noche,[Si te sientes mejor hablamos e...],health
+Súper bien,[Súper bien],social
+Te gustaría cenar conmigo,[Te gustaría cenar conmigo...],food
+Una chimba de,An awesome [something] / A badass [something],slang
+Vamos a rumbear o qué,What...,activities
+Tus besos me vuelven locoloca,[Tus besos me vuelven locoloca...],romance
+Te deseo,[Te deseo],intimate
+Ven a la cama,[Ven a la cama],intimate
+Creo que...,I think that...,
+Pienso que...,I think that...,

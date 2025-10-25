@@ -1,0 +1,3019 @@
+[
+  {
+    "Spanish": "Tres",
+    "English": "three",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "number"
+  },
+  {
+    "Spanish": "Uno",
+    "English": "one",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "number"
+  },
+  {
+    "Spanish": "Vamos a hablar.",
+    "English": "Let's talk.",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "Vamos a ver.",
+    "English": "Let's see / We'll see.",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "Veinte",
+    "English": "twenty",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "number"
+  },
+  {
+    "Spanish": "Voy a salir.",
+    "English": "I'm going out.",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "Voy a {{comer}}.",
+    "English": "I'm going to {{eat}}.",
+    "Current_Notes": "Frame: Ir a + infinitive",
+    "Type": "basic",
+    "Tags": "pattern essential frame"
+  },
+  {
+    "Spanish": "Voy saliendo",
+    "English": "I'm leaving now",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "verb"
+  },
+  {
+    "Spanish": "Ya casi.",
+    "English": "Almost there / Almost done.",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "Ya entendí.",
+    "English": "Now I understand / Got it.",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "Ya llegué.",
+    "English": "I'm here now / I've arrived.",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "Ya no.",
+    "English": "Not anymore.",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "Ya vengo.",
+    "English": "I'll be right back.",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "Ya {{voy}}.",
+    "English": "I'm {{coming}} now.",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "pattern essential frame"
+  },
+  {
+    "Spanish": "{{Acabar}} de + inf: Acabo de comer.",
+    "English": "I just ate.",
+    "Current_Notes": "Recent past pattern",
+    "Type": "basic",
+    "Tags": "grammar pattern"
+  },
+  {
+    "Spanish": "{{Dame}} un minuto.",
+    "English": "{{Give me}} a minute.",
+    "Current_Notes": "Dar = to give",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "{{Dime}} algo.",
+    "English": "{{Tell me}} something.",
+    "Current_Notes": "Decir = to say/tell",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "{{Estar}} + gerund: Estoy comiendo.",
+    "English": "I am eating.",
+    "Current_Notes": "Progressive tense pattern",
+    "Type": "basic",
+    "Tags": "grammar pattern"
+  },
+  {
+    "Spanish": "{{Estar}} por + inf: Estoy por salir.",
+    "English": "I'm about to leave.",
+    "Current_Notes": "Imminent action",
+    "Type": "basic",
+    "Tags": "grammar pattern"
+  },
+  {
+    "Spanish": "{{Estoy}} bien.",
+    "English": "I {{am}} fine.",
+    "Current_Notes": "Estar = to be (state)",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "{{Es}} tarde.",
+    "English": "It {{is}} late.",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "{{Hay}} que + inf: Hay que pagar.",
+    "English": "One must pay / We need to pay.",
+    "Current_Notes": "General obligation",
+    "Type": "basic",
+    "Tags": "grammar pattern"
+  },
+  {
+    "Spanish": "{{Hay}} que irnos.",
+    "English": "We {{have}} to go.",
+    "Current_Notes": "Haber = there is/must",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "{{Ir}} a + inf: Voy a dormir.",
+    "English": "I'm going to sleep.",
+    "Current_Notes": "Future pattern",
+    "Type": "basic",
+    "Tags": "grammar pattern"
+  },
+  {
+    "Spanish": "{{La/Lo}} veo mañana.",
+    "English": "I'll see {{you}} tomorrow.",
+    "Current_Notes": "La/Lo = you (object with usted)",
+    "Type": "basic",
+    "Tags": "pronoun formal"
+  },
+  {
+    "Spanish": "{{Le}} gusta.",
+    "English": "{{You/He/She}} likes it.",
+    "Current_Notes": "Le = to you(formal)/him/her",
+    "Type": "basic",
+    "Tags": "pronoun essential"
+  },
+  {
+    "Spanish": "{{Me}} gusta.",
+    "English": "{{I}} like it.",
+    "Current_Notes": "Me = to me",
+    "Type": "basic",
+    "Tags": "pronoun essential"
+  },
+  {
+    "Spanish": "{{Mira}} esto.",
+    "English": "{{Look at}} this.",
+    "Current_Notes": "Informal command",
+    "Type": "basic",
+    "Tags": "verb command"
+  },
+  {
+    "Spanish": "{{Nos}} vemos.",
+    "English": "{{We}}'ll see each other.",
+    "Current_Notes": "Nos = us/each other",
+    "Type": "basic",
+    "Tags": "pronoun essential"
+  },
+  {
+    "Spanish": "{{Poder}} + inf: ¿Puedes ayudarme?",
+    "English": "Can you help me?",
+    "Current_Notes": "Ability/permission pattern",
+    "Type": "basic",
+    "Tags": "grammar pattern"
+  },
+  {
+    "Spanish": "{{Pon}} música.",
+    "English": "{{Put on}} music.",
+    "Current_Notes": "Poner = to put",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "{{Páreme}} aquí.",
+    "English": "{{Stop}} here for me.",
+    "Current_Notes": "Transportation command",
+    "Type": "basic",
+    "Tags": "verb command"
+  },
+  {
+    "Spanish": "{{Póngame}} un tinto.",
+    "English": "{{Give me}} a black coffee.",
+    "Current_Notes": "Polite command with me",
+    "Type": "basic",
+    "Tags": "verb command formal"
+  },
+  {
+    "Spanish": "{{Querer}} + inf: Quiero verte.",
+    "English": "I want to see you.",
+    "Current_Notes": "Desire pattern",
+    "Type": "basic",
+    "Tags": "grammar pattern"
+  },
+  {
+    "Spanish": "{{Quiero}} verte.",
+    "English": "I {{want}} to see you.",
+    "Current_Notes": "Querer = to want",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "{{Regálame}} una bolsa.",
+    "English": "{{Give me}} a bag please.",
+    "Current_Notes": "Colombian polite request",
+    "Type": "basic",
+    "Tags": "verb command colombian"
+  },
+  {
+    "Spanish": "{{Se}} fue.",
+    "English": "{{He/She}} left.",
+    "Current_Notes": "Se = reflexive/passive marker",
+    "Type": "basic",
+    "Tags": "pronoun essential"
+  },
+  {
+    "Spanish": "{{Siga}} derecho.",
+    "English": "{{Go}} straight.",
+    "Current_Notes": "Formal command",
+    "Type": "basic",
+    "Tags": "verb command formal"
+  },
+  {
+    "Spanish": "{{Soy}} de Bogotá.",
+    "English": "I {{am}} from Bogotá.",
+    "Current_Notes": "Ser = to be (permanent)",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "{{Tener}} que + inf: Tengo que irme.",
+    "English": "I have to go.",
+    "Current_Notes": "Obligation pattern",
+    "Type": "basic",
+    "Tags": "grammar pattern"
+  },
+  {
+    "Spanish": "{{Te}} gusta.",
+    "English": "{{You}} like it.",
+    "Current_Notes": "Te = to you (informal)",
+    "Type": "basic",
+    "Tags": "pronoun essential"
+  },
+  {
+    "Spanish": "{{Te}} veo mañana.",
+    "English": "I'll see {{you}} tomorrow.",
+    "Current_Notes": "Te = you (object with tú)",
+    "Type": "basic",
+    "Tags": "pronoun essential"
+  },
+  {
+    "Spanish": "{{Toca}} esperar.",
+    "English": "We {{have to}} wait.",
+    "Current_Notes": "Tocar = to be necessary (Colombian)",
+    "Type": "basic",
+    "Tags": "verb colombian essential"
+  },
+  {
+    "Spanish": "{{Ven}} acá.",
+    "English": "{{Come}} here.",
+    "Current_Notes": "Informal command",
+    "Type": "basic",
+    "Tags": "verb command"
+  },
+  {
+    "Spanish": "{{Voy}} a casa.",
+    "English": "I'm {{going}} home.",
+    "Current_Notes": "Ir = to go",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "¿A qué hora te queda bien?",
+    "English": "What time works for you?",
+    "Current_Notes": "scheduling check",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Dónde {{estás}}?",
+    "English": "Where {{are}} you?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "¿Quieres que pase por ti?",
+    "English": "Do you want me to pick you up?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Quieres que te acompañe?",
+    "English": "Do you want me to go with you?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Quieres que te llame?",
+    "English": "Do you want me to call you?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Quieres que te traiga algo?",
+    "English": "Do you want me to bring you something?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Quieres que {{te pida}} un taxi?",
+    "English": "Do you want me to {{order you}} a taxi?",
+    "Current_Notes": "Frame: ¿Quieres que + subjunctive?",
+    "Type": "basic",
+    "Tags": "pattern essential frame"
+  },
+  {
+    "Spanish": "¿Qué {{haces}}?",
+    "English": "What are you {{doing}}?",
+    "Current_Notes": "Hacer = to do/make",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "¿Te parece si comemos?",
+    "English": "How about we eat?",
+    "Current_Notes": "gentle proposal",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Te parece si hablamos mañana?",
+    "English": "How about we talk tomorrow?",
+    "Current_Notes": "gentle proposal",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Te parece si lo dejamos para otro día?",
+    "English": "How about we leave it for another day?",
+    "Current_Notes": "gentle proposal",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Te parece si nos vemos más tarde?",
+    "English": "How about we meet later?",
+    "Current_Notes": "gentle proposal",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Te parece si {{vamos}}?",
+    "English": "How about we {{go}}?",
+    "Current_Notes": "gentle proposal",
+    "Type": "basic",
+    "Tags": "pattern essential frame"
+  },
+  {
+    "Spanish": "¿Te queda bien mañana?",
+    "English": "Does tomorrow work for you?",
+    "Current_Notes": "scheduling check",
+    "Type": "cloze",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Te queda bien por la tarde?",
+    "English": "Does afternoon work for you?",
+    "Current_Notes": "scheduling check",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Te queda bien {{a las siete}}?",
+    "English": "Does {{seven}} work for you?",
+    "Current_Notes": "scheduling check",
+    "Type": "basic",
+    "Tags": "pattern essential frame"
+  },
+  {
+    "Spanish": "¿Te sirve así?",
+    "English": "Does that work for you?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Todavía estás ahí?",
+    "English": "Are you still there?",
+    "Current_Notes": "still/yet",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿Vas a venir?",
+    "English": "Are you going to come?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "pattern frame"
+  },
+  {
+    "Spanish": "¿{{La}} tienes?",
+    "English": "Do you have {{it}}?",
+    "Current_Notes": "La = it (feminine object)",
+    "Type": "basic",
+    "Tags": "pronoun essential"
+  },
+  {
+    "Spanish": "¿{{Lo}} tienes?",
+    "English": "Do you have {{it}}?",
+    "Current_Notes": "Lo = it (masculine object)",
+    "Type": "basic",
+    "Tags": "pronoun essential"
+  },
+  {
+    "Spanish": "¿{{Puedes}} venir?",
+    "English": "{{Can}} you come?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "¿{{Quieres}} salir?",
+    "English": "Do you {{want}} to go out?",
+    "Current_Notes": "Querer question form",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "¿{{Tienes}} hambre?",
+    "English": "Are you {{hungry}}?",
+    "Current_Notes": "Lit: Do you have hunger?",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "¿{{Tú}} quieres café?",
+    "English": "Do {{you}} want coffee?",
+    "Current_Notes": "informal/intimate",
+    "Type": "basic",
+    "Tags": "pronoun essential"
+  },
+  {
+    "Spanish": "¿{{Usted}} quiere café?",
+    "English": "Do {{you}} want coffee?",
+    "Current_Notes": "formal/affectionate",
+    "Type": "basic",
+    "Tags": "pronoun formal"
+  },
+  {
+    "Spanish": "¿{{Vas}} a venir?",
+    "English": "Are you {{going}} to come?",
+    "Current_Notes": "Ir in future construction",
+    "Type": "basic",
+    "Tags": "verb essential"
+  },
+  {
+    "Spanish": "Llegué al hotel todo bien",
+    "English": "I arrived at the hotel, all good",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "daily"
+  },
+  {
+    "Spanish": "Por allá",
+    "English": "That way",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "directions"
+  },
+  {
+    "Spanish": "Quiubo todo bien",
+    "English": "What's up, all good?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "daily"
+  },
+  {
+    "Spanish": "Tranqui todo bien",
+    "English": "Chill, all good",
+    "Current_Notes": "soften/decline",
+    "Type": "basic",
+    "Tags": "daily"
+  },
+  {
+    "Spanish": "A qué hora es la función",
+    "English": "What time is the show?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "A qué hora te sirve",
+    "English": "What time works for you?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "A qué horas",
+    "English": "At what time? / What times?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Acuéstate conmigo",
+    "English": "Lie down with me",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "intimate"
+  },
+  {
+    "Spanish": "Acércate",
+    "English": "Come closer / Get closer",
+    "Current_Notes": "Imperative to move nearer. Can be romantic ('Acércate, quiero besarte') or neutral ('Acércate para que te vea'). Context determines tone.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Ahorita mismo",
+    "English": "Right now / This very moment",
+    "Current_Notes": "right now (CO)",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Ahí hablamos",
+    "English": "We'll talk then / Talk to you later",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Ahí vamos",
+    "English": "We're going / Let's go / Here we go",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Al frente de",
+    "English": "In front of",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "directions"
+  },
+  {
+    "Spanish": "Al lado de",
+    "English": "Next to / Beside",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "directions"
+  },
+  {
+    "Spanish": "Algo suave o con alcohol",
+    "English": "Something soft (non-alcoholic) or with alcohol?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Almorzamos juntos mañana",
+    "English": "Let's have lunch together tomorrow",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Almorzaste ya",
+    "English": "Did you already eat lunch? / Have you had lunch?",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Almuerzo y cena también",
+    "English": "Lunch and dinner too",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food"
+  },
+  {
+    "Spanish": "Antier",
+    "English": "The day before yesterday",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Aprecio mucho lo que haces por mí",
+    "English": "I really appreciate what you do for me",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Así está perfecto",
+    "English": "That's perfect (just like that) / That's just right",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Avísame cuando llegues",
+    "English": "Let me know when you arrive",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Ay Dios",
+    "English": "Oh God / Oh my God",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Ay papámamá",
+    "English": "Oh daddy/mommy (expression of emotion)",
+    "Current_Notes": "Colombian expression of surprise, pleasure, or pain. NOT literal parent reference. Can be flirty ('Ay papá, qué rico') or express pain ('Ay mamá, eso duele'). Very Colombian.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Ay sí",
+    "English": "Oh yes / Yeah right (sarcastic)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Bien o qué",
+    "English": "Good or what? / You good? / Everything okay?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Chao hablamos más tarde",
+    "English": "Bye we'll talk later",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Claro que sí",
+    "English": "Of course yes / Absolutely",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Contigo hasta un paseo por TransMilenio ",
+    "English": "With you even a TransMilenio ride is nice",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Contigo me siento en casa",
+    "English": "With you I feel at home",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Contigo todo es diferente",
+    "English": "With you everything is different",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Creo que necesito terapia intensiva",
+    "English": "I think I need intensive therapy / I think I need ICU",
+    "Current_Notes": "Humorous/dramatic expression when overwhelmed. 'Terapia intensiva' = ICU, used metaphorically. Example after stressful day or intense attraction. 'Después de esa rumba creo que necesito terapia intensiva'",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Cruzando la calle",
+    "English": "Crossing the street",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "directions"
+  },
+  {
+    "Spanish": "Cuando te sientas bien celebremos",
+    "English": "When you feel better let's celebrate",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Cuando tú quieras",
+    "English": "Whenever you want / You decide",
+    "Current_Notes": "informal/intimate",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Cuarto",
+    "English": "Quarter / Room / Fourth",
+    "Current_Notes": "Multiple meanings: 1) Room/bedroom ('Mi cuarto está limpio') 2) Quarter 1/4 ('Un cuarto de pizza') 3) Fourth/4th ('El cuarto piso'). Context determines meaning.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Cuántas cuadras",
+    "English": "How many blocks?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "directions"
+  },
+  {
+    "Spanish": "Cuídate mucho preciosa",
+    "English": "Take good care of yourself, beautiful",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Cómo te fue hoy",
+    "English": "How did today go? / How was your day?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Cómo va la mañana",
+    "English": "How's the morning going?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Dale pues",
+    "English": "Alright then / Let's do it / Okay sure",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "De una",
+    "English": "For sure / Right away",
+    "Current_Notes": "immediate yes",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "De verdad",
+    "English": "Really? / Seriously? / For real? / Truly",
+    "Current_Notes": "Expression of surprise OR emphasis. As question: '¿De verdad?' (Really?). As statement: 'De verdad te amo' (I truly love you). Very common.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Descansa hablamos mañana",
+    "English": "Rest we'll talk tomorrow",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Di mi nombre",
+    "English": "Say my name",
+    "Current_Notes": "Imperative request. Can be intimate/romantic or about recognition. Example (romantic): 'Di mi nombre, quiero escucharlo de tus labios' (Say my name, I want to hear it from your lips)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Doble",
+    "English": "Double / Turn (direction)",
+    "Current_Notes": "Two meanings: 1) Double amount ('Dame doble porción') 2) Turn left/right driving ('Doble a la derecha'). Context determines meaning.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Déjame probarte",
+    "English": "Let me try you / Let me taste you",
+    "Current_Notes": "Can mean taste (food: 'Déjame probarte este plato') or intimate/sensual context. 'Probar' = try/taste. Meaning depends on context.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "El cielo está de luto porque perdió una ",
+    "English": "The sky is in mourning because it lost a star",
+    "Current_Notes": "Romantic/cheesy pickup line. Implies person is so beautiful they're the star that fell from heaven. Common in Colombian flirting culture despite being cliché.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "El descanso se hace en la pista",
+    "English": "You rest on the dance floor / Rest happens while dancing",
+    "Current_Notes": "Colombian party culture saying: real rest happens dancing (ironic). Party mentality - don't stop even when tired. Response to someone saying they're tired at rumba.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "El mejor descanso es rumbear más",
+    "English": "The best rest is to party more",
+    "Current_Notes": "Colombian party philosophy: cure tiredness by partying harder. 'Rumbear' = Colombian slang for partying. Humorous/ironic party saying.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "En la esquina",
+    "English": "On/At the corner",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "directions"
+  },
+  {
+    "Spanish": "En un ratico",
+    "English": "In a little while",
+    "Current_Notes": "short while (CO)",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Entonces qué",
+    "English": "So what? / So what's up? / What then?",
+    "Current_Notes": "Multiple uses: 1) Asking what's the plan ('¿Entonces qué? ¿Vamos?') 2) Challenging 'so what?'. Context/tone determines meaning.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Entramos un ratico",
+    "English": "Let's go in for a bit / Should we pop in for a moment?",
+    "Current_Notes": "short while (CO)",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Envejezcamos juntos",
+    "English": "Let's grow old together",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Eres como el agua",
+    "English": "You're like water",
+    "Current_Notes": "Often part of 'Eres como el agua para el chocolate' (like water for chocolate - reference to novel, means someone who makes you boil/passionate). Or: 'Eres como el agua que necesito para vivir' (You're like the water I need to live)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Eres la razón por la que el café colombi",
+    "English": "You're the reason Colombian coffee is so good",
+    "Current_Notes": "Poetic/humorous compliment connecting person to Colombia's famous coffee. Implies they're the essence of Colombian greatness. Cheesy but sweet pickup line.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Eres mi debilidad",
+    "English": "You are my weakness",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Eres mi persona favorita hoy",
+    "English": "You're my favorite person today",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Eres muy especial para mí",
+    "English": "You're very special to me",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Eres muy sexy",
+    "English": "You're very sexy",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Espero que tengas un día hermoso",
+    "English": "I hope you have a beautiful day",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Estar contigo es una nota",
+    "English": "Being with you is amazing",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Estudiamos anatomía",
+    "English": "Let's study anatomy / We study anatomy",
+    "Current_Notes": "Can be literal (medical/biology study) or flirtatious euphemism for physical exploration. Example (flirty): 'Estudiamos anatomía esta noche?' means exploring each other's bodies.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Estás buenísima",
+    "English": "You're smoking hot (feminine)",
+    "Current_Notes": "Strong attraction compliment to a woman. 'Buenísima' = superlative of 'buena' (hot/attractive). Can be objectifying, context matters. Example (among friends): 'Esa mujer está buenísima'",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Estás muy ricorica",
+    "English": "You look really hot/delicious (feminine)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Estás provocándome",
+    "English": "You're provoking me / You're tempting me / You're teasing me",
+    "Current_Notes": "Accusation of provocation/temptation. Can be flirtatious or serious. Example (flirty): 'Estás provocándome con esa ropa' (You're provoking me with those clothes)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Examiname",
+    "English": "Examine me",
+    "Current_Notes": "Imperative request to examine. Can be medical or flirtatious ('doctor/patient' roleplay). Example (medical): 'Doctor, examiname la garganta' or (flirty): 'Examiname completo, doctor'",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Hablamos mañana con calmita",
+    "English": "We'll talk tomorrow calmly / Let's talk tomorrow when things are calmer",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Hagamos cardio",
+    "English": "Let's do cardio",
+    "Current_Notes": "Exercise suggestion. Can be literal (running, gym) or sexual euphemism. Example literal: 'Hagamos cardio en el parque' or euphemism (sex as cardio workout).",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Hermosa",
+    "English": "Beautiful",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Hoy paso mejor mañana",
+    "English": "Today I'll pass better tomorrow / I'll stop by tomorrow instead",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Háblame sucio",
+    "English": "Talk dirty to me",
+    "Current_Notes": "Intimate/sexual request. 'Sucio' = dirty. Example used in intimate contexts for dirty talk.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Jugamos al doctor",
+    "English": "Let's play doctor",
+    "Current_Notes": "Children's game OR adult flirtatious/sexual roleplay. 'Doctor/patient' scenario. Context determines meaning. Example (adult): 'Jugamos al doctor esta noche?' (sexual roleplay)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Listo",
+    "English": "Ready / Done / Okay / Got it",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Listo ya quedó",
+    "English": "Done",
+    "Current_Notes": "that's it",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Mañana temprano",
+    "English": "Tomorrow early / Tomorrow morning",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Me alegra mucho estar contigo",
+    "English": "I'm so happy to be with you",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Me alegra terminar el día contigo",
+    "English": "I'm happy to end the day with you",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Me avisas cuando llegues",
+    "English": "Let me know when you arrive",
+    "Current_Notes": "let me know",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Me cuentas cuando puedas",
+    "English": "Tell me when you can / Fill me in when you get a chance",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Me encanta cuando me besas",
+    "English": "I love it when you kiss me",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Me encanta terminar el día contigo",
+    "English": "I love ending the day with you",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Me encantó pasar tiempo contigo",
+    "English": "I loved spending time with you",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Me hace feliz hablar contigo siempre que",
+    "English": "It makes me happy to talk with you whenever",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Me preocupo por ti avísame si te sientes",
+    "English": "I worry about you let me know if you feel (unwell/bad)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Me siento tranquilo contigo",
+    "English": "I feel calm/at peace with you",
+    "Current_Notes": "soften/decline",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Me tomas la temperatura",
+    "English": "Take my temperature / Check my temperature",
+    "Current_Notes": "Medical request OR flirtatious 'doctor' roleplay. Example (medical): 'Me siento mal, me tomas la temperatura?' or (flirty): 'Doctor, me tomas la temperatura?'",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Mi vida",
+    "English": "My life (term of endearment)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Muérdeme",
+    "English": "Bite me",
+    "Current_Notes": "Imperative. Can be defiant/challenging OR sensual/intimate. Context matters. Example (intimate): 'Muérdeme suave' (Bite me gently)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Más suave",
+    "English": "More gentle / Slower / Calmer / Less intense",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Más tardecito",
+    "English": "A little later",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Métemelo",
+    "English": "Put it in me",
+    "Current_Notes": "Primarily sexual/intimate meaning. Direct request. Context can occasionally be non-sexual (putting object somewhere) but usually intimate.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Necesito un doctordoctora",
+    "English": "I need a doctor",
+    "Current_Notes": "Medical need OR flirtatious roleplay reference. Example (medical): 'Me siento mal, necesito un doctor' or (flirty): 'Necesito un doctor, tengo fiebre'",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "No me provoques",
+    "English": "Don't provoke me / Don't tempt me / Don't push me",
+    "Current_Notes": "Warning against provocation. Can be threatening or flirtatious. Example (flirty): 'No me provoques que no respondo' (Don't provoke me or I won't be responsible)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "No me sueltes",
+    "English": "Don't let me go / Don't let go of me",
+    "Current_Notes": "Request to hold on. Physical or emotional. Example (romantic): 'No me sueltes, quédate conmigo' (Don't let me go, stay with me)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Normal",
+    "English": "Normal / Fine / Whatever / No big deal",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Nos hablamos más tardecito",
+    "English": "We'll talk a little later",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "O a la tuya",
+    "English": "Or at your place / Or yours",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Obvio",
+    "English": "Obviously / Of course",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Para en la esquina",
+    "English": "Stop at the corner",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "directions"
+  },
+  {
+    "Spanish": "Parce",
+    "English": "Buddy/Mate",
+    "Current_Notes": "buddy (Colombian)",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "Parce suave",
+    "English": "Easy buddy / Relax dude / Chill bro",
+    "Current_Notes": "buddy (Colombian)",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "Parceroparcera",
+    "English": "Buddy / Partner / My friend",
+    "Current_Notes": "buddy (Colombian)",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "Pasado mañana",
+    "English": "The day after tomorrow",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Pienso en ti desde que me desperté",
+    "English": "I've been thinking of you since I woke up",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Pienso en ti todo el día",
+    "English": "I think about you all day",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Podemos ir un ratico",
+    "English": "We can go for a bit / Can we go for a little while?",
+    "Current_Notes": "short while (CO)",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Por acá",
+    "English": "This way / Over here",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "directions"
+  },
+  {
+    "Spanish": "Por supuesto",
+    "English": "Of course / Certainly",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Preciosa",
+    "English": "Beautiful/Precious",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Prefieres mañana o el viernes",
+    "English": "Do you prefer tomorrow or Friday?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Prefiero algo tranquilo",
+    "English": "I prefer something calm/quiet/chill",
+    "Current_Notes": "soften/decline",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Prefiero verte en un lugar tranquilo",
+    "English": "I prefer to see you in a quiet/calm place",
+    "Current_Notes": "soften/decline",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Préndeme",
+    "English": "Turn me on / Light me up",
+    "Current_Notes": "Can mean: 1) Light (cigarette) 2) Turn on (sexually). Example (sexual): 'Préndeme con esa mirada' (Turn me on with that look)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Que tengas una noche linda",
+    "English": "Have a beautiful night",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Quedamos en contacto",
+    "English": "Let's stay in touch / We'll keep in touch",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Quiubo parce",
+    "English": "What's up buddy / Hey dude",
+    "Current_Notes": "buddy (Colombian)",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "Qué jartera",
+    "English": "What a pain/drag/hassle",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Qué me vas a hacer",
+    "English": "What are you going to do to me?",
+    "Current_Notes": "Question with various tones: threatening, flirtatious, playful. Example (flirty): '¿Qué me vas a hacer si no te obedezco?' (What are you going to do to me if I don't obey you?)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Qué pena llego tarde",
+    "English": "I'm so sorry I'm late",
+    "Current_Notes": "sorry/embarrassed",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "Qué pena no entendí",
+    "English": "I'm sorry, I didn't understand",
+    "Current_Notes": "sorry/embarrassed",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "Qué pereza",
+    "English": "What a drag / How lazy (I feel) / I can't be bothered",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Qué plan para hoy",
+    "English": "What's the plan for today?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Qué ternura la tuya",
+    "English": "How sweet/cute of you / You're so sweet",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Qué va",
+    "English": "No way / Not at all / Forget it",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Salimos hoy",
+    "English": "We're going out today / Let's go out today",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Si fueras lluvia yo sería Bogotá para te",
+    "English": "If you were rain I'd be Bogotá to have you all the time",
+    "Current_Notes": "Romantic Colombian pickup line. Bogotá is very rainy. Means: If you were rain, I'd be Bogotá (rainy city) so I could have you all the time. Poetic cheesy compliment.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Si fueras una arepa te comería todos los",
+    "English": "If you were an arepa I'd eat you every day",
+    "Current_Notes": "Romantic food metaphor. Arepas are eaten daily in Colombia. Means: I'd want you every day like Colombians want arepas. Playful/cheesy pickup line.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Si fueras una palabra estarías en el dic",
+    "English": "If you were a word you'd be in the dictionary under 'perfect'",
+    "Current_Notes": "Cheesy romantic compliment/pickup line. Implies you're the definition of perfection. Classic corny line still used playfully.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Si la belleza fuera delito yo te daría c",
+    "English": "If beauty were a crime I'd give you life in prison",
+    "Current_Notes": "Flirtatious pickup line. 'Cadena perpetua' = life sentence. Exaggerated compliment about extreme beauty being criminal. Colombian flirt culture.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Si quieres paso por ti",
+    "English": "If you want I'll pick you up / I can pick you up if you'd like",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Te aviso cuando salga",
+    "English": "I'll let you know when I leave",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Te dolió cuando caíste del cielo",
+    "English": "Did it hurt when you fell from heaven?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Te la mando ahorita",
+    "English": "I'll send it to you right now",
+    "Current_Notes": "right now (CO)",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Te portaste bien hoy",
+    "English": "You behaved well today / You did good today",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Te provoca un café más tarde",
+    "English": "Do you feel like coffee later? / Does coffee sound good later?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Te sientes bien",
+    "English": "You feel good",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Te sirve así",
+    "English": "Does this work for you? / Is this okay for you?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Tengamos hijos",
+    "English": "Let's have children",
+    "Current_Notes": "Serious relationship/playful flirtation. Example (serious): 'Tengamos hijos juntos' (Let's have children together) or (playful flirt): 'Eres tan hermosa, tengamos hijos' (You're so beautiful, let's have children)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Tienes unos labios hermosos",
+    "English": "You have beautiful lips",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Tomaste café ya",
+    "English": "Did you already have coffee? / Have you had coffee yet?",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Tranqui yo me encargo",
+    "English": "Don't worry",
+    "Current_Notes": "I've got this",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Tu belleza es la octava maravilla del mu",
+    "English": "Your beauty is the eighth wonder of the world",
+    "Current_Notes": "Romantic exaggeration. Seven wonders officially exist, so eighth = beyond all known wonders. Cheesy but endearing pickup line.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Tu mirada me pega más duro que el sol en",
+    "English": "Your gaze hits me harder than the sun in Cartagena",
+    "Current_Notes": "Colombian romantic metaphor. Cartagena sun is intensely hot. Your look affects me more powerfully than intense Caribbean sun. Poetic/playful.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Tu papá es ladrón Porque robó las estrel",
+    "English": "Your dad is a thief because he stole the stars from the sky to put them in your eyes",
+    "Current_Notes": "Classic ultra-cheesy pickup line. Implies eyes sparkle like stars stolen from sky. Very cliché but still used playfully in Colombian flirting.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Tu sonrisa brilla más que El Dorado",
+    "English": "Your smile shines brighter than El Dorado",
+    "Current_Notes": "Colombian romantic reference. El Dorado = legendary city of gold. Your smile outshines mythical gold. Poetic/patriotic flirt.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Tus ojos son como el café colombiano osc",
+    "English": "Your eyes are like Colombian coffee, dark and addictive",
+    "Current_Notes": "Colombian romantic coffee metaphor. Compares dark eyes to Colombia's famous dark addictive coffee. Patriotic poetic compliment.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Tus ojos tienen más magia que el Carnava",
+    "English": "Your eyes have more magic than the Carnaval de Barranquilla",
+    "Current_Notes": "Colombian romantic reference. Carnaval de Barranquilla = Colombia's magical famous carnival. Eyes more magical than legendary festival. Patriotic flirt.",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Tócame",
+    "English": "Touch me",
+    "Current_Notes": "Imperative request. Can be innocent (touch my shoulder) or sensual. Context matters. Example (sensual): 'Tócame suave' (Touch me gently)",
+    "Type": "basic",
+    "Tags": "general"
+  },
+  {
+    "Spanish": "Tú me importas mucho",
+    "English": "You matter a lot to me",
+    "Current_Notes": "informal/intimate",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Un tinto porfa",
+    "English": "A coffee please / A black coffee please",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "Una pola",
+    "English": "A beer / A cold one",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "Uy qué chimba",
+    "English": "Wow, how awesome! / Holy shit, that's cool!",
+    "Current_Notes": "awesome (Colombian)",
+    "Type": "basic",
+    "Tags": "slang"
+  },
+  {
+    "Spanish": "Vamos a caminar un ratico",
+    "English": "Let's go walk for a bit",
+    "Current_Notes": "short while (CO)",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Vamos a la barra un momento",
+    "English": "Let's go to the bar for a moment",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Vamos a la playa mañana",
+    "English": "Let's go to the beach tomorrow",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Vamos suave",
+    "English": "Let's go slow/easy/chill / Let's take it easy",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Ya casi",
+    "English": "Almost there / Almost done",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Ya casi llego",
+    "English": "I'm almost there",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Ya llegaste",
+    "English": "You arrived (already) / Did you arrive?",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Ya llegué",
+    "English": "I just arrived / I'm here now",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "time_planning"
+  },
+  {
+    "Spanish": "Ya mismo",
+    "English": "Right now / Right away / Immediately",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Ya terminaste",
+    "English": "Are you done already? / Did you already finish?",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Ya vengo",
+    "English": "I'll be right back / I'm coming back soon",
+    "Current_Notes": "now/already",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "Yo manejo vamos suave",
+    "English": "I'm driving",
+    "Current_Notes": "we'll go slow",
+    "Type": "basic",
+    "Tags": "reactions"
+  },
+  {
+    "Spanish": "911 necesito un beso",
+    "English": "911 I need a kiss",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Amor de mi vida",
+    "English": "Love of my life",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Crees en el amor a primera vista o paso ",
+    "English": "Do you believe in love at first sight, or should I walk by again?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Cómo amaneció mi amor",
+    "English": "How did you wake up my love",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Dame un abrazo",
+    "English": "Give me a hug",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Dame un beso",
+    "English": "Give me a kiss",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Duerme rico mi amor",
+    "English": "Sleep well my love",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Eres mi amor",
+    "English": "You are my love",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Hagamos el amor",
+    "English": "Let's make love",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Hasta mañana mi amorcito",
+    "English": "See you tomorrow my little love",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Ojalá te sientas mejor mi amor",
+    "English": "I hope you feel better my love",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Si el amor fuera agua yo te daría el mar",
+    "English": "If love were water, I would give you the sea",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Siempre serás mi amor",
+    "English": "You will always be my love",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Solo abrazos hoy",
+    "English": "Just hugs today",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Te amo",
+    "English": "I love you",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Te extraño",
+    "English": "I miss you",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Te extraño mucho",
+    "English": "I miss you a lot",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Te extraño un resto",
+    "English": "I miss you a ton",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Un beso hablamos después",
+    "English": "A kiss, we'll talk later",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "¡Qué chimba!",
+    "English": "How awesome! / What a blast!",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": "street colombian slang"
+  },
+  {
+    "Spanish": "¡Qué gonorrea!",
+    "English": "What a pain in the ass! (vulgar)",
+    "Current_Notes": "Colombian slang - can be negative OR affectionate depending on tone",
+    "Type": "",
+    "Tags": "street vulgar colombian"
+  },
+  {
+    "Spanish": "Ese man es un HP",
+    "English": "That guy is a son of a bitch",
+    "Current_Notes": "HP = hijueputa (very common abbreviation)",
+    "Type": "",
+    "Tags": "street vulgar explicit"
+  },
+  {
+    "Spanish": "¡Qué malparido!",
+    "English": "What a bastard! (strong)",
+    "Current_Notes": "Stronger than HP - use carefully",
+    "Type": "",
+    "Tags": "street vulgar explicit"
+  },
+  {
+    "Spanish": "¡Ay no joda!",
+    "English": "Oh don't fuck around! / Come on!",
+    "Current_Notes": "Common frustrated expression",
+    "Type": "",
+    "Tags": "street vulgar colombian"
+  },
+  {
+    "Spanish": "Me cagó",
+    "English": "They screwed me over",
+    "Current_Notes": "Vulgar but very common",
+    "Type": "",
+    "Tags": "street vulgar"
+  },
+  {
+    "Spanish": "¡Qué mierda!",
+    "English": "What the fuck! / What shit!",
+    "Current_Notes": "Vulgar expression of frustration",
+    "Type": "",
+    "Tags": "street vulgar explicit"
+  },
+  {
+    "Spanish": "Estoy arrecho",
+    "English": "I'm pissed off / annoyed",
+    "Current_Notes": "In Colombia: angry; In other countries: horny",
+    "Type": "",
+    "Tags": "street colombian"
+  },
+  {
+    "Spanish": "Eso es una berraquera",
+    "English": "That's badass / awesome",
+    "Current_Notes": "Colombian expression of admiration",
+    "Type": "",
+    "Tags": "street colombian slang"
+  },
+  {
+    "Spanish": "Déjame quieto",
+    "English": "Leave me alone",
+    "Current_Notes": "Colombian way to say stop bothering me",
+    "Type": "",
+    "Tags": "street colombian"
+  },
+  {
+    "Spanish": "¿Qué más pues?",
+    "English": "What's up then?",
+    "Current_Notes": "Very Colombian greeting",
+    "Type": "",
+    "Tags": "street colombian slang"
+  },
+  {
+    "Spanish": "Ese cuento está muy raro",
+    "English": "That story is very weird / suspicious",
+    "Current_Notes": "Colombian expression of doubt",
+    "Type": "",
+    "Tags": "street colombian"
+  },
+  {
+    "Spanish": "Me vale verga",
+    "English": "I don't give a fuck",
+    "Current_Notes": "Very vulgar - use with caution",
+    "Type": "",
+    "Tags": "street vulgar explicit"
+  },
+  {
+    "Spanish": "Quedamos",
+    "English": "Let's do it / We're set",
+    "Current_Notes": "Colombian confirmation",
+    "Type": "",
+    "Tags": "street colombian"
+  },
+  {
+    "Spanish": "¿Bien o qué?",
+    "English": "Good or what? / You good?",
+    "Current_Notes": "Colombian casual check-in",
+    "Type": "",
+    "Tags": "street colombian slang"
+  },
+  {
+    "Spanish": "¡Uy parce!",
+    "English": "Oh buddy! / Dude!",
+    "Current_Notes": "Common Colombian exclamation",
+    "Type": "",
+    "Tags": "street colombian slang"
+  },
+  {
+    "Spanish": "Me toca madrugar",
+    "English": "I have to get up early",
+    "Current_Notes": "Colombian expression",
+    "Type": "",
+    "Tags": "street colombian"
+  },
+  {
+    "Spanish": "¿Dónde está el baño?",
+    "English": "Where is the bathroom?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Qué hora es?",
+    "English": "What time is it?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Cómo se dice esto en español?",
+    "English": "How do you say this in Spanish?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Puedes repetir eso?",
+    "English": "Can you repeat that?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Hablas inglés?",
+    "English": "Do you speak English?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Cuánto cuesta esto?",
+    "English": "How much does this cost?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿De dónde eres?",
+    "English": "Where are you from?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Qué recomiendas?",
+    "English": "What do you recommend?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿A qué hora cierra?",
+    "English": "What time does it close?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Cuál es tu nombre?",
+    "English": "What is your name?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Por qué preguntas?",
+    "English": "Why are you asking?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Cuándo nos vemos?",
+    "English": "When do we see each other?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Qué haces mañana?",
+    "English": "What are you doing tomorrow?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "No entiendo",
+    "English": "I don't understand",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Me puedes ayudar?",
+    "English": "Can you help me?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "Estoy perdido",
+    "English": "I'm lost (male)",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "Estoy perdida",
+    "English": "I'm lost (female)",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Qué significa eso?",
+    "English": "What does that mean?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "No sé",
+    "English": "I don't know",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Puedes explicar eso?",
+    "English": "Can you explain that?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "Esto no funciona",
+    "English": "This doesn't work",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "Se me olvidó",
+    "English": "I forgot",
+    "Current_Notes": "Literally: It forgot itself to me",
+    "Type": "",
+    "Tags": "basic problem"
+  },
+  {
+    "Spanish": "¿Puedes hablar más despacio?",
+    "English": "Can you speak more slowly?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "No me queda claro",
+    "English": "It's not clear to me / I don't understand",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Me repites?",
+    "English": "Can you repeat to me?",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "Necesito ayuda",
+    "English": "I need help",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "Me parece bien",
+    "English": "It seems good to me / That's fine with me",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "Me parece perfecto",
+    "English": "That seems perfect to me",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "No me parece",
+    "English": "I don't think so / That doesn't seem right to me",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "Estoy de acuerdo",
+    "English": "I agree",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "No estoy de acuerdo",
+    "English": "I don't agree / I disagree",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "Me gusta eso",
+    "English": "I like that",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "No me gusta",
+    "English": "I don't like it",
+    "Current_Notes": "",
+    "Type": "",
+    "Tags": ""
+  },
+  {
+    "Spanish": "¿Vos qué pensás?",
+    "English": "What do you think? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Y vos qué decís?",
+    "English": "And what do you say? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos querés ir?",
+    "English": "Do you want to go? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos sabés dónde es?",
+    "English": "Do you know where it is? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos entendés?",
+    "English": "Do you understand? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos tenés tiempo?",
+    "English": "Do you have time? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos conocés este lugar?",
+    "English": "Do you know this place? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos comés carne?",
+    "English": "Do you eat meat? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos podés ayudarme?",
+    "English": "Can you help me? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos vas a ir?",
+    "English": "Are you going to go? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Qué hacés?",
+    "English": "What are you doing? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Cómo te llamás?",
+    "English": "What's your name? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos greeting"
+  },
+  {
+    "Spanish": "¿De dónde sos?",
+    "English": "Where are you from? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos vivís por acá?",
+    "English": "Do you live around here? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Vos trabajás o estudiás?",
+    "English": "Do you work or study? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions vos"
+  },
+  {
+    "Spanish": "¿Me colaborás con esto?",
+    "English": "Can you help me with this? (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions help colombian"
+  },
+  {
+    "Spanish": "¿Me colaborás un segundo?",
+    "English": "Can you help me for a second? (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions help colombian"
+  },
+  {
+    "Spanish": "Me colaborás y me pasás la sal",
+    "English": "Help me out and pass me the salt (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions help colombian"
+  },
+  {
+    "Spanish": "¿Me colaborás con la cuenta?",
+    "English": "Can you help me with the bill? (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions help colombian"
+  },
+  {
+    "Spanish": "¿Me colaborás a cargar esto?",
+    "English": "Can you help me carry this? (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions help colombian"
+  },
+  {
+    "Spanish": "¿Me hacés un favor?",
+    "English": "Can you do me a favor?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions help"
+  },
+  {
+    "Spanish": "Ayudame un toque",
+    "English": "Help me out a bit",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "requests help"
+  },
+  {
+    "Spanish": "¿Me echás una mano?",
+    "English": "Can you give me a hand?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions help"
+  },
+  {
+    "Spanish": "Necesito tu ayuda",
+    "English": "I need your help",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "requests help"
+  },
+  {
+    "Spanish": "¿Me podés ayudar con esto?",
+    "English": "Can you help me with this?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions help"
+  },
+  {
+    "Spanish": "Cuadremos para mañana",
+    "English": "Let's arrange/plan for tomorrow (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "planning colombian"
+  },
+  {
+    "Spanish": "¿Cuadramos algo?",
+    "English": "Shall we arrange something? (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions planning colombian"
+  },
+  {
+    "Spanish": "¿A qué horas cuadramos?",
+    "English": "What time shall we arrange? (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions planning colombian"
+  },
+  {
+    "Spanish": "Yo te cuadro",
+    "English": "I'll arrange it with you (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "planning colombian"
+  },
+  {
+    "Spanish": "Cuadramos después",
+    "English": "We'll arrange it later (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "planning colombian"
+  },
+  {
+    "Spanish": "¿Cuadramos para el fin de semana?",
+    "English": "Shall we arrange for the weekend? (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions planning colombian"
+  },
+  {
+    "Spanish": "Cuadra con los parceros",
+    "English": "Arrange it with the buddies (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "planning colombian"
+  },
+  {
+    "Spanish": "Ya cuadré todo",
+    "English": "I already arranged everything (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "planning colombian"
+  },
+  {
+    "Spanish": "¿Querés una arepa?",
+    "English": "Do you want an arepa?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "Me traés un tinto porfa",
+    "English": "Bring me a coffee please (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian requests"
+  },
+  {
+    "Spanish": "Vamos por unas onces",
+    "English": "Let's go for afternoon snack (Colombian)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "¿Qué desayunás?",
+    "English": "What do you have for breakfast?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions food"
+  },
+  {
+    "Spanish": "Me comí una bandeja paisa",
+    "English": "I ate a bandeja paisa (Colombian dish)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "¿Querés un buñuelo?",
+    "English": "Do you want a buñuelo? (Colombian fried dough)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "Tomemos aguapanela",
+    "English": "Let's drink aguapanela (Colombian drink)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "¿Pedimos empanadas?",
+    "English": "Should we order empanadas?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions food colombian"
+  },
+  {
+    "Spanish": "El sancocho está delicioso",
+    "English": "The sancocho is delicious (Colombian soup)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "¿Te gusta el ajiaco?",
+    "English": "Do you like ajiaco? (Colombian soup)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions food colombian"
+  },
+  {
+    "Spanish": "Me antoja un patacón",
+    "English": "I'm craving a patacón (fried plantain)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "¿Vamos por unos chuzos?",
+    "English": "Shall we get some chuzos? (Colombian skewers)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions food colombian"
+  },
+  {
+    "Spanish": "Compremos pandebono",
+    "English": "Let's buy pandebono (Colombian cheese bread)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "El calentado está rico",
+    "English": "The calentado is good (Colombian leftover dish)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "¿Querés mazamorra?",
+    "English": "Do you want mazamorra? (Colombian corn drink)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions food colombian"
+  },
+  {
+    "Spanish": "Traeme una aguadepanela caliente",
+    "English": "Bring me a hot aguadepanela",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "requests food colombian"
+  },
+  {
+    "Spanish": "¿Pedimos lechona?",
+    "English": "Should we order lechona? (Colombian stuffed pork)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions food colombian"
+  },
+  {
+    "Spanish": "Me encantan las almojábanas",
+    "English": "I love almojábanas (Colombian cheese bread)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian"
+  },
+  {
+    "Spanish": "¿Hay tamales?",
+    "English": "Are there tamales?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions food colombian"
+  },
+  {
+    "Spanish": "El changua es raro pero rico",
+    "English": "Changua is weird but tasty (Colombian milk soup)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "food colombian opinion"
+  },
+  {
+    "Spanish": "Me gustás",
+    "English": "I like you (romantic)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance colombian"
+  },
+  {
+    "Spanish": "¿Salimos algún día?",
+    "English": "Should we go out sometime?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions romance"
+  },
+  {
+    "Spanish": "Sos linda/lindo",
+    "English": "You're pretty/handsome (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance colombian"
+  },
+  {
+    "Spanish": "Me parece que sos chistoso/a",
+    "English": "I think you're funny (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance opinion colombian"
+  },
+  {
+    "Spanish": "¿Tenés novio/novia?",
+    "English": "Do you have a boyfriend/girlfriend?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions romance"
+  },
+  {
+    "Spanish": "Estoy soltero/a",
+    "English": "I'm single",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "¿Te gustaría salir?",
+    "English": "Would you like to go out?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions romance"
+  },
+  {
+    "Spanish": "Me caés muy bien",
+    "English": "I really like you (as a person)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Sos muy simpático/a",
+    "English": "You're very nice (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance colombian"
+  },
+  {
+    "Spanish": "¿Puedo invitarte a algo?",
+    "English": "Can I buy you something?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions romance"
+  },
+  {
+    "Spanish": "Me encanta hablar con vos",
+    "English": "I love talking with you (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance colombian"
+  },
+  {
+    "Spanish": "¿Me pasás tu número?",
+    "English": "Can you give me your number? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions romance colombian"
+  },
+  {
+    "Spanish": "Estás muy bonita hoy",
+    "English": "You look very pretty today",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "¿Vos tenés WhatsApp?",
+    "English": "Do you have WhatsApp? (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions romance colombian"
+  },
+  {
+    "Spanish": "Me gusta tu estilo",
+    "English": "I like your style",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Sos muy inteligente",
+    "English": "You're very intelligent (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance colombian"
+  },
+  {
+    "Spanish": "¿Querés tomar algo?",
+    "English": "Do you want to get a drink?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions romance"
+  },
+  {
+    "Spanish": "Me la paso bien con vos",
+    "English": "I have a good time with you (vos form)",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance colombian"
+  },
+  {
+    "Spanish": "¿Cuándo nos vemos?",
+    "English": "When do we see each other?",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "questions romance"
+  },
+  {
+    "Spanish": "Me hiciste reír",
+    "English": "You made me laugh",
+    "Current_Notes": "",
+    "Type": "basic",
+    "Tags": "romance"
+  },
+  {
+    "Spanish": "Tengo gripa",
+    "English": "I have a cold/flu",
+    "Current_Notes": "Colombian variant of 'gripe'. Used for both common cold and flu. Very common expression in everyday conversation.",
+    "Type": "phrase",
+    "Tags": "health,illness,symptoms"
+  },
+  {
+    "Spanish": "Me siento maluco/maluca",
+    "English": "I feel sick/lousy",
+    "Current_Notes": "Distinctly Colombian way to say you're feeling unwell. More informal than 'enfermo/a'. Very commonly used in daily conversation.",
+    "Type": "phrase",
+    "Tags": "health,illness,feelings"
+  },
+  {
+    "Spanish": "Estoy griposo/griposa",
+    "English": "I have the flu/cold (I'm sick with flu)",
+    "Current_Notes": "Adjective form describing someone who has gripa. Same as 'agripado/a'. Informal but widely understood.",
+    "Type": "phrase",
+    "Tags": "health,illness,symptoms"
+  },
+  {
+    "Spanish": "Tengo maluquera",
+    "English": "I'm feeling really lousy/sick",
+    "Current_Notes": "Noun form of 'maluco'. Expresses general unwellness or feeling bad. Very Colombian expression.",
+    "Type": "phrase",
+    "Tags": "health,illness,feelings"
+  },
+  {
+    "Spanish": "Me duele la cabeza",
+    "English": "I have a headache / My head hurts",
+    "Current_Notes": "Standard expression for headache. Pattern extends to other body parts (me duele el estómago, me duele la espalda).",
+    "Type": "phrase",
+    "Tags": "health,symptoms,pain"
+  },
+  {
+    "Spanish": "Tengo fiebre",
+    "English": "I have a fever",
+    "Current_Notes": "Direct way to express having a fever. Essential health vocabulary.",
+    "Type": "phrase",
+    "Tags": "health,symptoms,illness"
+  },
+  {
+    "Spanish": "Tengo dolor de garganta",
+    "English": "I have a sore throat",
+    "Current_Notes": "Common symptom expression. 'Garganta' is throat.",
+    "Type": "phrase",
+    "Tags": "health,symptoms,pain"
+  },
+  {
+    "Spanish": "Estoy enfermito/enfermita",
+    "English": "I'm a bit sick (diminutive)",
+    "Current_Notes": "Diminutive form suggesting you're not too ill but want sympathy. Softens the statement.",
+    "Type": "phrase",
+    "Tags": "health,illness,feelings"
+  },
+  {
+    "Spanish": "No me siento bien",
+    "English": "I don't feel well",
+    "Current_Notes": "General way to express not feeling good without specifying symptoms. Polite and common.",
+    "Type": "phrase",
+    "Tags": "health,feelings"
+  },
+  {
+    "Spanish": "Tengo mareo",
+    "English": "I feel dizzy",
+    "Current_Notes": "Expresses dizziness or vertigo. Important symptom to communicate.",
+    "Type": "phrase",
+    "Tags": "health,symptoms"
+  },
+  {
+    "Spanish": "Tengo náuseas",
+    "English": "I feel nauseous",
+    "Current_Notes": "Expresses feeling sick to your stomach, wanting to vomit.",
+    "Type": "phrase",
+    "Tags": "health,symptoms"
+  },
+  {
+    "Spanish": "Me duele el estómago",
+    "English": "I have a stomach ache / My stomach hurts",
+    "Current_Notes": "Common pain expression for stomach area. Can also say 'me duele la barriga/panza' informally.",
+    "Type": "phrase",
+    "Tags": "health,symptoms,pain"
+  },
+  {
+    "Spanish": "Tengo diarrea",
+    "English": "I have diarrhea",
+    "Current_Notes": "Direct medical term. Important for communicating digestive issues.",
+    "Type": "phrase",
+    "Tags": "health,symptoms,hygiene"
+  },
+  {
+    "Spanish": "Tengo churrias",
+    "English": "I have diarrhea (Colombian slang)",
+    "Current_Notes": "Colorful Colombian slang for diarrhea. Usually used with 'tener'. More informal than 'diarrea'.",
+    "Type": "phrase",
+    "Tags": "health,symptoms,slang"
+  },
+  {
+    "Spanish": "Tengo estreñimiento",
+    "English": "I'm constipated",
+    "Current_Notes": "Medical term for constipation. Important digestive health vocabulary.",
+    "Type": "phrase",
+    "Tags": "health,symptoms"
+  },
+  {
+    "Spanish": "Tengo tos",
+    "English": "I have a cough",
+    "Current_Notes": "Simple, direct expression for coughing. Common cold/flu symptom.",
+    "Type": "phrase",
+    "Tags": "health,symptoms"
+  },
+  {
+    "Spanish": "Tengo flojera",
+    "English": "I feel weak",
+    "Current_Notes": "Expresses physical weakness or lack of energy. Also used for laziness in other contexts.",
+    "Type": "phrase",
+    "Tags": "health,symptoms,feelings"
+  },
+  {
+    "Spanish": "Estoy resfriado/resfriada",
+    "English": "I have a cold",
+    "Current_Notes": "Formal term for having a cold (resfriado). Less common in Colombia than 'gripa'.",
+    "Type": "phrase",
+    "Tags": "health,illness"
+  },
+  {
+    "Spanish": "Voy a la droguería",
+    "English": "I'm going to the pharmacy",
+    "Current_Notes": "In Colombia, 'droguería' and 'farmacia' both mean pharmacy. 'Droguería' is more commonly used.",
+    "Type": "phrase",
+    "Tags": "health,places,pharmacy"
+  },
+  {
+    "Spanish": "Necesito pastillas",
+    "English": "I need pills/tablets",
+    "Current_Notes": "General term for medication in pill form. 'Pastillas' is very common.",
+    "Type": "phrase",
+    "Tags": "health,pharmacy,medicine"
+  },
+  {
+    "Spanish": "Necesito una receta",
+    "English": "I need a prescription",
+    "Current_Notes": "Important phrase for getting prescription medications at the pharmacy.",
+    "Type": "phrase",
+    "Tags": "health,pharmacy,medical"
+  },
+  {
+    "Spanish": "¿Me da algo para el dolor?",
+    "English": "Can you give me something for the pain?",
+    "Current_Notes": "Common pharmacy request. 'Algo para...' pattern useful for requesting remedies.",
+    "Type": "phrase",
+    "Tags": "health,pharmacy,pain"
+  },
+  {
+    "Spanish": "Necesito un analgésico",
+    "English": "I need a painkiller",
+    "Current_Notes": "Specific medication request. 'Analgésico' is painkiller/pain reliever.",
+    "Type": "phrase",
+    "Tags": "health,pharmacy,medicine"
+  },
+  {
+    "Spanish": "Tomo jarabe para la tos",
+    "English": "I take cough syrup",
+    "Current_Notes": "'Jarabe' is syrup. Common medication form for coughs and colds.",
+    "Type": "phrase",
+    "Tags": "health,pharmacy,medicine"
+  },
+  {
+    "Spanish": "Tengo cita médica",
+    "English": "I have a doctor's appointment",
+    "Current_Notes": "Standard phrase for medical appointment. 'Cita médica' or 'cita con el médico'.",
+    "Type": "phrase",
+    "Tags": "health,medical,appointments"
+  },
+  {
+    "Spanish": "Voy al médico",
+    "English": "I'm going to the doctor",
+    "Current_Notes": "Simple, direct way to say you're visiting the doctor.",
+    "Type": "phrase",
+    "Tags": "health,medical"
+  },
+  {
+    "Spanish": "¿Me prestas el baño?",
+    "English": "Can I use your bathroom? (Colombian)",
+    "Current_Notes": "Very Colombian way to ask for bathroom. 'Prestar' literally means 'to lend' but used for bathroom requests.",
+    "Type": "phrase",
+    "Tags": "hygiene,bathroom,polite"
+  },
+  {
+    "Spanish": "Me voy a bañar",
+    "English": "I'm going to take a shower/bath",
+    "Current_Notes": "'Bañarse' means to bathe. Very common daily hygiene expression.",
+    "Type": "phrase",
+    "Tags": "hygiene,daily-routine"
+  },
+  {
+    "Spanish": "Voy a lavarme los dientes",
+    "English": "I'm going to brush my teeth",
+    "Current_Notes": "Literally 'wash my teeth'. Also 'cepillarme los dientes' (brush my teeth).",
+    "Type": "phrase",
+    "Tags": "hygiene,daily-routine"
+  },
+  {
+    "Spanish": "Tengo chucha",
+    "English": "I have body odor (armpit odor)",
+    "Current_Notes": "Colombian slang for body odor, especially from armpits. Informal but commonly understood.",
+    "Type": "phrase",
+    "Tags": "hygiene,body,slang"
+  },
+  {
+    "Spanish": "Pedro tiene pecueca",
+    "English": "Pedro has stinky feet",
+    "Current_Notes": "Colombian term for foot odor. Used with 'tener'. Informal and often humorous.",
+    "Type": "phrase",
+    "Tags": "hygiene,body,slang"
+  },
+  {
+    "Spanish": "Me duele la barriga",
+    "English": "My belly/tummy hurts",
+    "Current_Notes": "Informal term for stomach/belly. More colloquial than 'estómago'. Common with children.",
+    "Type": "phrase",
+    "Tags": "health,body,pain"
+  },
+  {
+    "Spanish": "Tengo dolor de espalda",
+    "English": "I have back pain",
+    "Current_Notes": "Common pain complaint. 'Espalda' is back.",
+    "Type": "phrase",
+    "Tags": "health,body,pain"
+  },
+  {
+    "Spanish": "Me duele el oído",
+    "English": "My ear hurts",
+    "Current_Notes": "Ear pain expression. 'Oído' is ear (inner ear). Also 'oreja' for outer ear.",
+    "Type": "phrase",
+    "Tags": "health,body,pain"
+  },
+  {
+    "Spanish": "Tengo dolor de muela",
+    "English": "I have a toothache",
+    "Current_Notes": "Tooth pain expression. 'Muela' is molar/tooth.",
+    "Type": "phrase",
+    "Tags": "health,body,pain"
+  },
+  {
+    "Spanish": "Hacer del uno",
+    "English": "To pee / Go number one",
+    "Current_Notes": "Euphemistic way to say urinate. Like English 'number one'. Family-friendly.",
+    "Type": "phrase",
+    "Tags": "hygiene,bathroom,euphemism"
+  },
+  {
+    "Spanish": "Hacer del dos",
+    "English": "To poop / Go number two",
+    "Current_Notes": "Euphemistic way to say defecate. Like English 'number two'. Family-friendly.",
+    "Type": "phrase",
+    "Tags": "hygiene,bathroom,euphemism"
+  },
+  {
+    "Spanish": "Tengo guayabo",
+    "English": "I have a hangover",
+    "Current_Notes": "Colombian slang for hangover. Very common after drinking alcohol.",
+    "Type": "phrase",
+    "Tags": "health,slang,symptoms"
+  },
+  {
+    "Spanish": "Me siento fatal",
+    "English": "I feel terrible/awful",
+    "Current_Notes": "Strong expression of feeling very unwell. More intense than 'me siento mal'.",
+    "Type": "phrase",
+    "Tags": "health,feelings"
+  },
+  {
+    "Spanish": "Estoy indispuesto/indispuesta",
+    "English": "I'm indisposed/unwell (formal)",
+    "Current_Notes": "Formal, elegant way to say you're sick. More polite than 'enfermo'.",
+    "Type": "phrase",
+    "Tags": "health,illness,formal"
+  },
+  {
+    "Spanish": "¿Qué te pasó?",
+    "English": "What happened to you? / What's wrong?",
+    "Current_Notes": "Common way to ask what's wrong with someone who looks unwell.",
+    "Type": "phrase",
+    "Tags": "health,questions,concern"
+  },
+  {
+    "Spanish": "¿Cómo te sientes?",
+    "English": "How do you feel?",
+    "Current_Notes": "Standard way to ask about someone's wellbeing or health condition.",
+    "Type": "phrase",
+    "Tags": "health,questions,concern"
+  },
+  {
+    "Spanish": "Voy a vomitar",
+    "English": "I'm going to vomit/throw up",
+    "Current_Notes": "Direct expression for needing to vomit. Also 'voy a devolver' in some regions.",
+    "Type": "phrase",
+    "Tags": "health,symptoms,urgent"
+  },
+  {
+    "Spanish": "Tengo escalofríos",
+    "English": "I have chills",
+    "Current_Notes": "Symptom of fever or illness. 'Escalofríos' means chills/shivers.",
+    "Type": "phrase",
+    "Tags": "health,symptoms"
+  },
+  {
+    "Spanish": "Me salió un moretón",
+    "English": "I got a bruise",
+    "Current_Notes": "'Moretón' is bruise. Common injury vocabulary.",
+    "Type": "phrase",
+    "Tags": "health,body,injuries"
+  },
+  {
+    "Spanish": "Me corté",
+    "English": "I cut myself",
+    "Current_Notes": "Simple past tense of 'cortarse'. Common injury expression.",
+    "Type": "phrase",
+    "Tags": "health,injuries"
+  },
+  {
+    "Spanish": "Necesito una curita",
+    "English": "I need a band-aid",
+    "Current_Notes": "'Curita' is band-aid in many Latin American countries. Diminutive of 'cura' (cure).",
+    "Type": "phrase",
+    "Tags": "health,hygiene,first-aid"
+  },
+  {
+    "Spanish": "Tengo alergia",
+    "English": "I have an allergy",
+    "Current_Notes": "Allergy expression. Important for medical situations.",
+    "Type": "phrase",
+    "Tags": "health,medical,allergies"
+  },
+  {
+    "Spanish": "Estoy embarazada",
+    "English": "I'm pregnant",
+    "Current_Notes": "Important health/medical state. 'Embarazada' is pregnant (false friend for English speakers).",
+    "Type": "phrase",
+    "Tags": "health,medical"
+  },
+  {
+    "Spanish": "Me picó un mosquito",
+    "English": "A mosquito bit me",
+    "Current_Notes": "Common complaint. 'Picar' means to sting/bite for insects.",
+    "Type": "phrase",
+    "Tags": "health,body,injuries"
+  },
+  {
+    "Spanish": "¡Uy",
+    "English": " qué pereza trabajar!",
+    "Current_Notes": " I don't feel like working! / What a drag to work!",
+    "Type": "Informal | Colombian idiom",
+    "Tags": "¡No tengo ganas de trabajar!"
+  }
+]
